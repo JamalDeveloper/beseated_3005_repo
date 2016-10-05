@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<extension type="component" version="3.1.0"  method="upgrade">
+	<name>ijoomeradv</name>
+	<creationDate>22-Apr-2013</creationDate>
+	<author>Tailored Solutions</author>
+	<authorEmail>dave@ijoomer.com</authorEmail>
+	<authorUrl>http://www.ijoomer.com</authorUrl>
+	<copyright>Copyright (C) 2010-2014. All rights reserved.</copyright>
+	<license>GNU/GPLv2</license>
+	<version>1.5.1-beta</version>
+	<description>
+	iJoomerAdv component has been successfully installed.
+	</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	 <install> <!-- Runs on install -->
+            <sql>
+                    <file driver="mysql" charset="utf8">sql/install/install.mysql.utf8.sql</file>
+            </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+            <sql>
+                    <file driver="mysql" charset="utf8">sql/uninstall/uninstall.mysql.utf8.sql</file>
+            </sql>
+    </uninstall>
+    <update> <!-- Runs on update; New in 2.5 -->
+            <schemas>
+                    <schemapath type="mysql">sql/updates/mysql</schemapath>
+            </schemas>
+    </update>
+
+
+	<media destination="com_ijoomeradv" folder="media">
+            <filename>index.html</filename>
+            <folder>images</folder>
+            <folder>css</folder>
+            <folder>js</folder>
+            <folder>voice</folder>
+    </media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_ijoomeradv/images/ijoomeradv_16.png" >COM_IJOOMERADV_TITLE</menu>
+		<submenu>
+			<menu img="../media/com_ijoomeradv/images/extensions_16.png" view="extensions">COM_IJOOMERADV_EXTENSIONS</menu>
+			<menu img="../media/com_ijoomeradv/images/extensionmanager_16.png" view="extensions" layout="manage">COM_IJOOMERADV_EXTENSIONS_MANAGER</menu>
+			<menu img="../media/com_ijoomeradv/images/configuration_16.png" view="config">COM_IJOOMERADV_CONFIGURATION</menu>
+			<menu img="../media/com_ijoomeradv/images/menumanager_16.png" view="menus">COM_IJOOMERADV_MENUS</menu>
+			<menu img="../media/com_ijoomeradv/images/pushnotification_16.png" view="pushnotif">COM_IJOOMERADV_PUSH_NOTIFICATION</menu>
+			<menu img="../media/com_ijoomeradv/images/report_16.png" view="report">COM_IJOOMERADV_REPORT</menu>
+		</submenu>
+
+
+		<!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+             to copy FROM in the package to install therefore files copied
+             in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>ijoomeradv.php</filename>
+			<!-- SQL files section -->
+            <folder>sql</folder>
+            <!-- tables files section -->
+            <folder>tables</folder>
+            <!-- models files section -->
+            <folder>models</folder>
+            <!-- views files section -->
+            <folder>views</folder>
+            <!-- controllers files section -->
+            <folder>controllers</folder>
+			<!-- helpers files section -->
+			<folder>helpers</folder>
+			<!-- logs files section -->
+			<folder>logs</folder>
+			<!-- themes files section -->
+			<folder>theme</folder>
+		</files>
+
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_ijoomeradv.ini</language>
+			<language tag="en-GB">en-GB.com_ijoomeradv.sys.ini</language>
+		</languages>
+	</administration>
+
+
+	  <!-- Site Main File Copy Section -->
+      <!-- Note the folder attribute: This attribute describes the folder
+        to copy FROM in the package to install therefore files copied
+        in this section are copied from /site/ in the package -->
+       <files folder="site">
+       		<filename>index.html</filename>
+			<filename>ijoomeradv.php</filename>
+            <folder>controllers</folder>
+			<folder>encryption</folder>
+			<folder>extensions</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>certificates</folder>
+       </files>
+	<languages folder="site/languages">
+			<language tag="en-GB">en-GB.com_ijoomeradv.ini</language>
+	</languages>
+</extension>

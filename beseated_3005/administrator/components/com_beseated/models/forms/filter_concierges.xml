@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.premium_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="phone_no ASC">FILTER_CONCIERGE_PHONE_NO_ASC</option>
+			<option value="phone_no DESC">FILTER_CONCIERGE_PHONE_NO_DESC</option>
+			<option value="city ASC">FILTER_CONCIERGE_CITY_ASC</option>
+			<option value="city DESC">FILTER_CONCIERGE_CITY_DESC</option>
+			<option value="concierge_id ASC">FILTER_CONCIERGE_ID_ASC</option>
+			<option value="concierge_id DESC">FILTER_CONCIERGE_ID_DESC</option>
+			<option value="is_default ASC">FILTER_CONCIERGE_IS_DEFAULT_ASC</option>
+			<option value="is_default DESC">FILTER_CONCIERGE_IS_DEFAULT_DESC</option>
+
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_BOOKING_REQUESTS_LIST_LIMIT"
+			description="COM_BESEATED_BOOKING_REQUESTS_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

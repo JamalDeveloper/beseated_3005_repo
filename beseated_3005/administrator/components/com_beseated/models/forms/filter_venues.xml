@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="chauffeur_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="venue_name ASC">FILTER_VENUE_NAME_ASC</option>
+			<option value="venue_name DESC">FILTER_VENUE_NAME_DESC</option>
+			<option value="published ASC">FILTER_STATUS_ASC</option>
+			<option value="published DESC">FILTER_STATUS_DESC</option>
+			<option value="location ASC">FILTER_LOCATION_ASC</option>
+			<option value="location DESC">FILTER_LOCATION_DESC</option>
+			<option value="created ASC">FILTER_CREATED_ACCOUNT_ASC</option>
+			<option value="created DESC">FILTER_CREATED_ACCOUNT_DESC</option>
+			<option value="people_count ASC">FILTER_MESSAGE_COUNT_ASC</option>
+			<option value="people_count DESC">FILTER_MESSAGE_COUNT_DESC</option>
+			<option value="deposit_per ASC">FILTER_COMMISION_RATE_ASC</option>
+			<option value="deposit_per DESC">FILTER_COMMISION_RATE_DESC</option>
+			<option value="has_guestlist ASC">FILTER_VENUE_HAS_GUEST_LIST_ASC</option>
+			<option value="has_guestlist DESC">FILTER_VENUE_HAS_GUEST_LIST_DESC</option>
+			<option value="active_payments ASC">FILTER_VENUE_HAS_ACTIVE_PAYMENTS_ASC</option>
+			<option value="active_payments DESC">FILTER_VENUE_HAS_ACTIVE_PAYMENTS_DESC</option>
+
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_CHAUFFEUR_BOOKING_LIST_LIMIT"
+			description="COM_BESEATED_CHAUFFEUR_BOOKING_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

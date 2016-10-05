@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="service_id"
+            name="service_id"
+            type="hidden" />
+
+        <field
+            id="protection_id"
+            name="protection_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+         <field
+            id="service_name"
+            name="service_name"
+            type="text"
+            label="COM_BCTED_PROTECTION_ADD_SERVICE_SERVICE_NAME_LABEL"
+            description="COM_BCTED_PROTECTION_ADD_SERVICE_SERVICE_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_PROTECTION_ADD_SERVICE_SERVICE_NAME_HINT"/>
+
+        <field
+            id="image"
+            name="image"
+            type="file"
+            label="COM_BCTED_PROTECTION_ADD_SERVICE_IMAGE_LABEL"
+            description="COM_BCTED_PROTECTION_ADD_SERVICE_IMAGE_LABEL"
+            class="inputbox"
+            hint="COM_BCTED_PROTECTION_ADD_SERVICE_IMAGE_HINT"/>
+
+        <field
+            id="price_per_hours"
+            name="price_per_hours"
+            type="text"
+            label="COM_BCTED_PROTECTION_ADD_SERVICE_PRICE_LABEL"
+            description="COM_BCTED_PROTECTION_ADD_SERVICE_PRICE_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_PROTECTION_ADD_SERVICE_PRICE_HINT"/>
+    </fieldset>
+</form>
+

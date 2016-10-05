@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - CMC Ecom360 Akeebasubs</name>
+    <author>compojoom.com</author>
+    <creationDate>2015-07-07</creationDate>
+    <copyright>Copyright (C) 2012 Yves Hoppe - compojoom.com. All rights reserved.</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorUrl>http://compojoom.com</authorUrl>
+    <version>2.0.0</version>
+    <description>PLG_SYSTEM_ECOM360_AKEEBA_DESCRIPTION</description>
+    <files>
+        <file plugin="ecom360akeeba">ecom360akeeba.php</file>
+    </files>
+    <languages folder="administrator/language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_ecom360akeeba.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="input" name="store_name"
+                       label="PLG_SYSTEM_ECOM360_AKEEBA_STORE" description="PLG_SYSTEM_ECOM360_AKEEBA_STORE_DESC"
+                       default="AkeebaSubs store" required="true" />
+
+                <field type="input" name="store_id"
+                       label="PLG_SYSTEM_ECOM360_AKEEBA_STORE_ID" description="PLG_SYSTEM_ECOM360_AKEEBA_STORE_ID_DESC"
+                       default="42" required="true" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,8 @@
+.pkg_icon{background: url("../images/gen-icons.png") no-repeat 1px -49px ; display: block;
+    height: 59px; width: 56px; margin:13% auto 5% auto; }
+.fav_icon{background: url("../images/gen-icons.png") no-repeat -65px -49px; display: block;height: 59px; width: 56px; margin:13% auto 5% auto;}
+.msg_icon{background: url("../images/gen-icons.png") no-repeat -124px -49px ; display: block;height: 59px; width: 56px; margin:13% auto 5% auto;}
+.booking_icon{background: url("../images/gen-icons.png") no-repeat 1px -112px ; display: block;height: 59px; width: 56px; margin:13% auto 5% auto;}
+
+
+.prf-form .form-horizontal .controls{margin:0 !important;}

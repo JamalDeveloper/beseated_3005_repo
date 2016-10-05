@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="service_id"
+            name="service_id"
+            type="hidden" />
+
+        <field
+            id="chauffeur_id"
+            name="chauffeur_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+        <field
+            id="service_type"
+            name="service_type"
+            type="text"
+            label="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_TYPE_LABEL"
+            description="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_TYPE_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_TYPE_HINT"/>
+
+         <field
+            id="service_name"
+            name="service_name"
+            type="text"
+            label="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_NAME_LABEL"
+            description="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CHAUFFEUR_ADD_SERVICE_SERVICE_NAME_HINT"/>
+
+        <field
+            id="image"
+            name="image"
+            type="file"
+            label="COM_BCTED_CHAUFFEUR_ADD_SERVICE_IMAGE_LABEL"
+            description="COM_BCTED_CHAUFFEUR_ADD_SERVICE_IMAGE_DESC"
+            class="inputbox"
+            hint="COM_BCTED_CHAUFFEUR_ADD_SERVICE_IMAGE_HINT"/>
+
+        <field
+            id="capacity"
+            name="capacity"
+            type="text"
+            label="COM_BCTED_CHAUFFEUR_ADD_SERVICE_CAPACITY_LABEL"
+            description="COM_BCTED_CHAUFFEUR_ADD_SERVICE_CAPACITY_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CHAUFFEUR_ADD_SERVICE_CAPACITY_HINT"/>
+
+    </fieldset>
+</form>
+

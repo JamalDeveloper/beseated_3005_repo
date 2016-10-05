@@ -1,0 +1,46 @@
+ffmpeg version n2.2.14-1-g0b51e0b Copyright (c) 2000-2015 the FFmpeg developers
+  built on Apr  3 2015 13:42:45 with gcc 4.8.2 (GCC) 20140120 (Red Hat 4.8.2-16)
+  configuration: --prefix=/root/ffmpeg_build --extra-cflags=-I/root/ffmpeg_build/include --extra-ldflags=-L/root/ffmpeg_build/lib --bindir=/root/bin --extra-libs=-ldl --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --arch=x86_64
+  libavutil      52. 66.100 / 52. 66.100
+  libavcodec     55. 52.102 / 55. 52.102
+  libavformat    55. 33.100 / 55. 33.100
+  libavdevice    55. 10.100 / 55. 10.100
+  libavfilter     4.  2.100 /  4.  2.100
+  libswscale      2.  5.102 /  2.  5.102
+  libswresample   0. 18.100 /  0. 18.100
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/html/dev/images/bcted/venue/235/06917994fc05bd96e22d52d9.MOV':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2015-04-17 10:36:48
+  Duration: 00:00:07.03, start: 0.000000, bitrate: 1462 kb/s
+    Stream #0:0(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 64 kb/s (default)
+    Metadata:
+      creation_time   : 2015-04-17 10:36:48
+      handler_name    : Core Media Data Handler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 320x480, 1390 kb/s, 30 fps, 30 tbr, 600 tbn, 1200 tbc (default)
+    Metadata:
+      creation_time   : 2015-04-17 10:36:48
+      handler_name    : Core Media Data Handler
+Output #0, flv, to '/var/www/html/dev/images/bcted/venue/235//875f94de0aaca2cdfcef6f7023347c10.flv':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    encoder         : Lavf55.33.100
+    Stream #0:0(und): Video: flv1 (flv) ([2][0][0][0] / 0x0002), yuv420p, 400x300, q=2-31, 200 kb/s, 1k tbn, 30 tbc (default)
+    Metadata:
+      creation_time   : 2015-04-17 10:36:48
+      handler_name    : Core Media Data Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) ([2][0][0][0] / 0x0002), 44100 Hz, mono, fltp (default)
+    Metadata:
+      creation_time   : 2015-04-17 10:36:48
+      handler_name    : Core Media Data Handler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 -> flv)
+  Stream #0:0 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=  211 fps=0.0 q=11.0 Lsize=     207kB time=00:00:07.08 bitrate= 239.5kbits/s    
+video:171kB audio:28kB subtitle:0 data:0 global headers:0kB muxing overhead 3.981256%

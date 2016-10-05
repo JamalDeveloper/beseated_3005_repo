@@ -1,0 +1,284 @@
+/*
+    eventgallery_Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#eventgallery_colorbox, #eventgallery_cboxOverlay, #eventgallery_cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#eventgallery_cboxWrapper {
+    max-width: none;
+}
+
+#eventgallery_cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#eventgallery_cboxMiddleLeft, #eventgallery_cboxBottomLeft {
+    clear: left;
+}
+
+#eventgallery_cboxContent {
+    position: relative;
+}
+
+#eventgallery_cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+#eventgallery_cboxTitle {
+    margin: 0;
+}
+
+#eventgallery_cboxDescription {
+    margin: 0;
+}
+
+#eventgallery_cboxLoadingOverlay, #eventgallery_cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#eventgallery_cboxPrevious, #eventgallery_cboxNext, #eventgallery_cboxClose, #eventgallery_cboxSlideshow {
+    cursor: pointer;
+}
+
+.eventgallery_cboxPhoto {
+    float: left;
+    margin: auto;
+    display: block;
+    max-width: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.eventgallery_cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#eventgallery_colorbox, #eventgallery_cboxContent, #eventgallery_cboxLoadedContent {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of eventgallery_Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#eventgallery_cboxOverlay {
+    background: #000;
+}
+
+#eventgallery_colorbox {
+    color: #999;
+    outline: 0;
+    line-height: 1.2em;
+}
+
+#eventgallery_cboxContent {
+    background: transparent;
+    overflow: hidden;
+}
+
+.eventgallery_cboxIframe {
+    background: #fff;
+}
+
+#eventgallery_cboxError {
+    padding: 50px;
+    border: 1px solid #ddd;
+}
+
+#eventgallery_cboxLoadedContent {
+    margin-bottom: 0;
+}
+
+#eventgallery_cboxTitle {
+    position: absolute;
+    padding: 3px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    min-height: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#eventgallery_cboxTitle > span {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#eventgallery_cboxLoadingOverlay {
+    background: #000 url(../images/loading-black.gif) no-repeat 50% 50%;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#eventgallery_cboxPrevious, #eventgallery_cboxNext, #eventgallery_cboxSlideshow, #eventgallery_cboxClose {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+    background: none;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#eventgallery_cboxPrevious:active, #eventgallery_cboxNext:active, #eventgallery_cboxSlideshow:active, #eventgallery_cboxClose:active {
+    outline: 0;
+}
+
+
+#eventgallery_cboxPrevious,
+#eventgallery_cboxNext,
+#eventgallery_cboxClose,
+#eventgallery_cboxSlideshow {
+    background: url(../images/controls.png) no-repeat top left;
+}
+
+#eventgallery_cboxSlideshow {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    display: block;
+    background-position: -75px 0;
+    width: 38px;
+    height: 19px;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+#eventgallery_cboxSlideshow:hover {
+    background-position: -75px bottom;
+}
+
+
+.eventgallery_cboxSlideshow_on #eventgallery_cboxSlideshow {
+    background-position: -122px 0;
+}
+
+.eventgallery_cboxSlideshow_on #eventgallery_cboxSlideshow:hover {
+    background-position: -122px bottom;
+}
+
+#eventgallery_cboxPrevious {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -32px;
+    background-position: top left;
+    width: 28px;
+    height: 65px;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+#eventgallery_cboxPrevious:hover {
+    background-position: bottom left;
+}
+
+#eventgallery_cboxNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -32px;
+    background-position: top right;
+    width: 28px;
+    height: 65px;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+#eventgallery_cboxNext:hover {
+    background-position: bottom right;
+}
+
+#eventgallery_cboxClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-position: -32px 0;
+    width: 38px;
+    height: 19px;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+#eventgallery_cboxClose:hover {
+    background-position: -32px bottom;
+}
+
+#eventgallery_colorbox button:active,
+#eventgallery_colorbox button:focus {
+    outline-width: 0;
+}
+
+#eventgallery_colorbox .inline-content {
+    padding: 10px;
+}
+
+#eventgallery_colorbox .eventgallery-add2cart,
+#eventgallery_colorbox .social-share-button-open {
+    padding: 0 10px 10px 0;
+    color: #999999;
+}
+
+#eventgallery_colorbox .eventgallery-add2cart:hover,
+#eventgallery_colorbox .social-share-button-open:hover {
+    color: #FFFFFF;
+}
+
+#eventgallery_cboxTitle .icons {
+    vertical-align: top;
+}
+
+#eventgallery_cboxTitle .content {
+    vertical-align: top;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#eventgallery_cboxTitle .current {
+    vertical-align: bottom;
+    text-align: right;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+#eventgallery_colorbox .img-caption,
+#eventgallery_colorbox .img-exif,
+#eventgallery_colorbox .img-id {
+    padding: 0;
+    display: block;
+}
+
+.social-sharing-toolbox-dark {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.social-sharing-toolbox-dark a{
+    color: white;
+}

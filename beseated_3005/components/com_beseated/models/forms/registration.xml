@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="userid"
+            name="userid"
+            type="hidden" />
+
+        <field
+            id="first_name"
+            name="first_name"
+            type="text"
+            label="COM_BCTED_REGISTRATION_USER_FIRST_NAME_LABEL"
+            description="COM_BCTED_REGISTRATION_USER_FIRST_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_USER_FIRST_NAME_HINT"/>
+
+      <!--   <field
+            id="last_name"
+            name="last_name"
+            type="text"
+            label="COM_BCTED_REGISTRATION_USER_LAST_NAME_LABEL"
+            description="COM_BCTED_REGISTRATION_USER_LAST_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_USER_LAST_NAME_HINT"/> -->
+
+        <field
+            id="mobile"
+            name="mobile"
+            type="text"
+            label="COM_BCTED_REGISTRATION_PHONE_NUMBER_LABEL"
+            description="COM_BCTED_REGISTRATION_PHONE_NUMBER_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_PHONE_NUMBER_HINT"/>
+
+        <field
+            id="email"
+            name="email"
+            type="email"
+            label="COM_BCTED_REGISTRATION_EMAIL_LABEL"
+            description="COM_BCTED_REGISTRATION_EMAIL_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            validate="email"
+            hint="COM_BCTED_REGISTRATION_EMAIL_HINT"/>
+
+       <field
+            id="password"
+            name="password"
+            type="password"
+            label="COM_BCTED_REGISTRATION_PASSWORD_LABEL"
+            description="COM_BCTED_REGISTRATION_PASSWORD_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_PASSWORD_HINT"/>
+
+        <field
+            id="password2"
+            name="password2"
+            type="password"
+            label="COM_BCTED_REGISTRATION_CONFIRM_PASSWORD_LABEL"
+            description="COM_BCTED_REGISTRATION_CONFIRM_PASSWORD_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_CONFIRM_PASSWORD_HINT"/>
+
+         <field
+            id="city"
+            name="city"
+            type="text"
+            label="COM_BCTED_REGISTRATION_USER_CITY_LABEL"
+            description="COM_BCTED_REGISTRATION_USER_CITY_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_REGISTRATION_USER_CITY_HINT"/>
+
+        <field
+            id="birthdate"
+            name="birthdate"
+            type="calendar"
+            label="COM_BCTED_REGISTRATION_USER_BIRTH_LABEL"
+            description="COM_BCTED_REGISTRATION_USER_BIRTH_DESC"
+            size="40"
+            class="inputbox"
+            required="required"
+            hint="COM_BCTED_REGISTRATION_USER_BIRTH_HINT"/>
+
+    </fieldset>
+</form>
+

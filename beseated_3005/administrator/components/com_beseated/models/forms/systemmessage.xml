@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="message_id"
+            name="message_id"
+            type="hidden" />
+
+        <field
+            id="message"
+            name="message"
+            type="textarea"
+            size="150"
+            rows="3"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_MESSAGE_TITLE_LABEL"
+            description="COM_BESEATED_MESSAGE_TITLE_DESC"
+            hint="COM_BESEATED_MESSAGE_TITLE_HINT" />
+
+        <field
+            name="city"
+            type="sql"
+            class="inputbox"
+            query="SELECT DISTINCT(city) AS city FROM #__beseated_user_profile ORDER BY city ASC"
+            key_field="city"
+            value_field="city"/>
+
+    </fieldset>
+</form>
+

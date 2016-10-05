@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="bct" method="upgrade">
+	<name>plg_bct_paypal</name>
+	<author>Tailored Sollution</author>
+	<creationDate>14th May 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>inquiry@tasolglobal.com</authorEmail>
+	<authorUrl>www.tasolglobal.org</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_BCT_PAYMENT_DESC</description>
+	<files>
+		<filename plugin="paypal">paypal.php</filename>
+		<filename plugin="paypal">paypalplatform.php</filename>
+		<filename plugin="paypal">paypal_step3.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_dreamyFlavours_paypal.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_dreamyFlavours_paypal.sys.ini</language>
+	</languages>
+</extension>

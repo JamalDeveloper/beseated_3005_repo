@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="table_id"
+            name="table_id"
+            type="hidden" />
+
+        <field
+            id="venue_id"
+            name="venue_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+        <field
+            id="premium_table_id"
+            name="premium_table_id"
+            type="sql"
+            default=""
+            class="inputbox"
+            query="SELECT premium_id, premium_table_name FROM #__beseated_venue_premium_table WHERE premium_table_name != '' AND published='1'"
+            key_field="premium_id"
+            value_field="premium_table_name">
+            <option value="">Table Type</option>
+        </field>
+
+         <field
+            id="table_name"
+            name="table_name"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_TABLE_CUSTOM_TABLE_NAME_LABEL"
+            description="COM_BCTED_CLUB_ADD_TABLE_CUSTOM_TABLE_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CLUB_ADD_TABLE_CUSTOM_TABLE_NAME_HINT"/>
+
+        <field
+            id="image"
+            name="image"
+            type="file"
+            label="COM_BCTED_CLUB_ADD_TABLE_TABLE_IMAGE_LABEL"
+            description="COM_BCTED_CLUB_ADD_TABLE_TABLE_IMAGE_DESC"
+            class="inputbox"
+            hint="COM_BCTED_CLUB_ADD_TABLE_TABLE_IMAGE_HINT"/>
+
+        <field
+            id="min_price"
+            name="min_price"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_TABLE_TABLE_PRICE_LABEL"
+            description="COM_BCTED_CLUB_ADD_TABLE_TABLE_PRICE_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CLUB_ADD_TABLE_TABLE_PRICE_HINT"/>
+
+        <field
+            id="capacity"
+            name="capacity"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_TABLE_TABLE_CAPACITY_LABEL"
+            description="COM_BCTED_CLUB_ADD_TABLE_TABLE_CAPACITY_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            validate="email"
+            hint="COM_BCTED_CLUB_ADD_TABLE_TABLE_CAPACITY_HINT"/>
+
+      <!--  <field
+           id="venue_table_description"
+           name="venue_table_description"
+           type="textarea"
+           label="COM_BCTED_CLUB_ADD_TABLE_TABLE_DESCRIPTION_LABEL"
+           description="COM_BCTED_CLUB_ADD_TABLE_TABLE_DESCRIPTION_DESC"
+           size="40"
+           class="inputbox"
+           default=""
+           required="required"
+           hint="COM_BCTED_CLUB_ADD_TABLE_TABLE_DESCRIPTION_HINT"/> -->
+
+    </fieldset>
+</form>
+

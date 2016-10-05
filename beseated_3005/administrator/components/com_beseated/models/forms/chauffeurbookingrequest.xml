@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="chauffeur_booking_id"
+            name="chauffeur_booking_id"
+            type="hidden" />
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="time_stamp"
+            name="time_stamp"
+            type="hidden" />
+
+
+        <field
+                name="user_id"
+                type="Userlist"
+                label="COM_BESEATED_USER_NAME"
+                description="COM_BESEATED_USER_NAME"
+            />
+
+        <field
+                name="chauffeur_id"
+                type="Chauffeurlist"
+                label="COM_BESEATED_CHAUFFEUR_NAME_LABEL"
+                description="COM_BESEATED_CHAUFFEUR_NAME_LABEL"
+            />
+
+
+       <!--  <field
+           id="total_price"
+           name="total_price"
+           type="text"
+           required="required"
+           label="COM_BESEATED_CHAUFFEUR_BOOKING_BILL_AMOUNT"
+           hint="COM_BESEATED_CHAUFFEUR_BOOKING_BILL_AMOUNT"
+            /> -->
+
+        <field
+            id="pickup_location"
+            name="pickup_location"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_CHAUFFEUR_BOOKING_PICKUP_LOCATION_LOCATION"
+            hint="COM_BESEATED_CHAUFFEUR_BOOKING_PICKUP_LOCATION_LOCATION" />
+
+        <field
+            id="dropoff_location"
+            name="dropoff_location"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_CHAUFFEUR_BOOKING_DROPOFF_LOCATION_LOCATION"
+            hint="COM_BESEATED_CHAUFFEUR_BOOKING_DROPOFF_LOCATION_LOCATION" />
+
+            <field name="booking_date"
+                    type="calendar"
+                    label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_DATE"
+                    description=""
+                    default="NOW"
+                    format="%d-%m-%Y" />
+
+            <field
+            id="booking_time"
+            name="booking_time"
+            type="text"
+            default=""
+            size="5"
+            required="required"
+            label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+            hint="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+             />
+
+    </fieldset>
+</form>
+

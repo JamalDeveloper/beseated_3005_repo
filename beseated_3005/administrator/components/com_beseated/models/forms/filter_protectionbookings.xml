@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.premium_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="booking_date ASC">PROTECTION_FILTER_BOOKIN_DATE_ASC</option>
+			<option value="booking_date DESC">PROTECTION_FILTER_BOOKIN_DATE_DESC</option>
+			<option value="total_hours ASC">PROTECTION_FILTER_BOOKIN_HOURS_ASC</option>
+			<option value="total_hours DESC">PROTECTION_FILTER_BOOKIN_HOURS_DESC</option>
+			<option value="service_name ASC">PROTECTION_FILTER_BOOKIN_SERVICE_NAME_ASC</option>
+			<option value="service_name DESC">PROTECTION_FILTER_BOOKIN_SERVICE_NAME_DESC</option>
+			<option value="full_name ASC">PROTECTION_FILTER_BOOKIN_FULL_NAME_ASC</option>
+			<option value="full_name DESC">PROTECTION_FILTER_BOOKIN_FULL_NAME_DESC</option>
+			<option value="protection_name ASC">BOOKING_REQUEST_FILTER_BY_ELEMENT_NAME_ASC</option>
+			<option value="protection_name DESC">BOOKING_REQUEST_FILTER_BY_ELEMENT_NAME_DESC</option>
+			<option value="total_price ASC">PROTECTION_FILTER_BOOKIN_TOTAL_PRICE_ASC</option>
+			<option value="total_price DESC">PROTECTION_FILTER_BOOKIN_TOTAL_PRICE_DESC</option>
+			<option value="total_guard ASC">PROTECTION_FILTER_BOOKIN_TOTAL_GUARD_ASC</option>
+			<option value="total_guard DESC">PROTECTION_FILTER_BOOKIN_TOTAL_GUARD_DESC</option>
+			<option value="meetup_location ASC">PROTECTION_FILTER_BOOKIN_MEETUP_LOCATION_ASC</option>
+			<option value="meetup_location DESC">PROTECTION_FILTER_BOOKIN_MEETUP_LOCATION_DESC</option>
+			<option value="booking_currency_code ASC">PROTECTION_FILTER_BOOKIN_CURRENCY_CODE_ASC</option>
+			<option value="booking_currency_code DESC">PROTECTION_FILTER_BOOKIN_CURRENCY_CODE_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT"
+			description="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

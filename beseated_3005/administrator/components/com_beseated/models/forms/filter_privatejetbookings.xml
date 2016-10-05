@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.premium_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="created ASC">PRIVATE_JET_BOOKINGS_FILTER_BOOKING_DATE_ASC</option>
+			<option value="created DESC">PRIVATE_JET_BOOKINGS_FILTER_BOOKING_DATE_DESC</option>
+			<option value="company_name ASC">FILTER_PRIVATE_JET_NAME_ASC</option>
+			<option value="company_name DESC">FILTER_PRIVATE_JET_NAME_DESC</option>
+			<option value="person_name ASC">FILTER_PRIVATE_JET_BOOKING_FULL_NAME_ASC</option>
+			<option value="person_name DESC">FILTER_PRIVATE_JET_BOOKING_FULL_NAME_DESC</option>
+			<option value="email ASC">FILTER_PRIVATE_JET_BOOKING_EMAIL_ASC</option>
+			<option value="email DESC">FILTER_PRIVATE_JET_BOOKING_EMAIL_DESC</option>
+			<option value="flight_date ASC">FILTER_PRIVATE_JET_DEPARTURE_DATE_ASC</option>
+			<option value="flight_date DESC">FILTER_PRIVATE_JET_DEPARTURE_DATE_DESC</option>
+			<option value="return_flight_date ASC">FILTER_PRIVATE_JET_RETURN_DEPARTURE_DATE_ASC</option>
+			<option value="return_flight_date DESC">FILTER_PRIVATE_JET_RETURN_DEPARTURE_DATE_DESC</option>
+			<option value="total_guest ASC">FILTER_PRIVATE_JET_TOTAL_GUEST_ASC</option>
+			<option value="total_guest DESC">FILTER_PRIVATE_JET_TOTAL_GUEST_DESC</option>
+			<option value="from_location ASC">FILTER_PRIVATE_JET_FROM_LOCATION_ASC</option>
+			<option value="from_location DESC">FILTER_PRIVATE_JET_FROM_LOCATION_DESC</option>
+			<option value="to_location ASC">FILTER_PRIVATE_JET_TO_LOCATION_ASC</option>
+			<option value="to_location DESC">FILTER_PRIVATE_JET_TO_LOCATION_DESC</option>
+			<option value="extra_information ASC">FILTER_PRIVATE_JET_BOOKING_EXTRA_INFO_ASC</option>
+			<option value="extra_information DESC">FILTER_PRIVATE_JET_BOOKING_EXTRA_INFO_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT"
+			description="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

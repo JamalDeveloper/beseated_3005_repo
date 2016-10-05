@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension type="library" version="3.0" method="upgrade">
+	<name>vi-solutions Library</name>
+	<libraryname>visolutions</libraryname>
+	<version>1.2.0</version>
+	<creationDate>2014-10-12</creationDate>
+	<author>Aicha Vack</author>
+	<authorEmail>contact@vi-solutions.de</authorEmail>
+	<authorUrl>http://www.vi-solutions.de</authorUrl>
+	<copyright>(C) 2014 - vi-solutions. All rights reserved.</copyright>
+	<license>GNU/GPLv3 or later</license>
+	<description>vi-solutions Library</description>
+	<files>
+        <folder>log</folder>
+        <folder>simple_html_dom</folder>
+		<folder>tcpdf</folder>
+		<file>index.html</file>
+	</files>
+</extension>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>MOD_BCTEDINTRO</name>
+	<author>Tailored Solution</author>
+	<creationDate>Feb 2015</creationDate>
+	<copyright>Copyright (C)2014 J!Mini . All rights unreserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ijoomer@gmail.com</authorEmail>
+	<authorUrl>http://joomlamini.com</authorUrl>
+	<version>3.2.0</version>
+	<description>MOD_BCTEDINTRO_XML_DESC</description>
+	<files>
+		<filename module="mod_bctedintro">mod_bctedintro.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_bctedintro.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_bctedintro.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="viewmode" type="list" default="1" label="MOD_BCTEDINTRO_VIEWMODE_LABEL" description="MOD_BCTEDINTRO_VIEWMODE_DESC">
+					<option value="0">iOS</option>
+					<option value="1">Android</option>
+				</field>
+
+				<field name="show_desc" type="radio" class="btn-group btn-group-yesno"
+					   default="1" label="MOD_BCTEDINTRO_SHOWDESC_LABEL" description="MOD_BCTEDINTRO_SHOWDESC_DESC">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+				<field name="desc" type="textarea" filter="safehtml" default="" label="MOD_BCTEDINTRO_DESC_LABEL" description="MOD_BCTEDINTRO_DESC_DESC" />
+
+                <field name="displayspacer1" type="spacer" label="+ Showcase Images +" class="text"/>
+
+				<field name="img_small" type="media"
+					   label="MOD_BCTEDINTRO_IMGSMALL_LABEL" description="MOD_BCTEDINTRO_IMGSMALL_DESC" />
+
+				<field name="img_big" type="media"
+					   label="MOD_BCTEDINTRO_IMGBIG_LABEL" description="MOD_BCTEDINTRO_IMGBIG_DESC" />
+
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="Module Class Suffix"
+					description="Module Class Suffix" />
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="Caching"
+					description="Select whether to cache the content of this module or not">
+					<option
+						value="1">Use global</option>
+					<option
+						value="0">No caching</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="Cache Time"
+					description="The time before the module is recached" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

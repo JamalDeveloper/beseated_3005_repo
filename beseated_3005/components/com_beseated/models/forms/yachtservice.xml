@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="service_id"
+            name="service_id"
+            type="hidden" />
+
+        <field
+            id="yacht_id"
+            name="yacht_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+         <field
+            id="service_name"
+            name="service_name"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_NAME_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_NAME_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_NAME_HINT"/>
+
+        <field
+            id="service_type"
+            name="service_type"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_TYPE_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_TYPE_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_TYPE_HINT"/>
+
+        <field
+            id="dock"
+            name="dock"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_DOCK_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_DOCK_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_SERVICE_DOCK_HINT"/>
+
+        <field
+            id="image"
+            name="image"
+            type="file"
+            label="COM_BCTED_YACHT_ADD_SERVICE_IMAGE_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_IMAGE_LABEL"
+            class="inputbox"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_IMAGE_HINT"/>
+
+        <field
+            id="price_per_hours"
+            name="price_per_hours"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_PRICE_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_PRICE_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_PRICE_HINT"/>
+
+        <field
+            id="min_hours"
+            name="min_hours"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_MIN_HOURS_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_MIN_HOURS_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_MIN_HOURS_HINT"/>
+
+         <field
+            id="capacity"
+            name="capacity"
+            type="text"
+            label="COM_BCTED_YACHT_ADD_SERVICE_CAPACITY_LABEL"
+            description="COM_BCTED_YACHT_ADD_SERVICE_CAPACITY_LABEL"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_YACHT_ADD_SERVICE_CAPACITY_HINT"/>
+    </fieldset>
+</form>
+

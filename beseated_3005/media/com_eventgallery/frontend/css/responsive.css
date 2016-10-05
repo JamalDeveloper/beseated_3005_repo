@@ -1,0 +1,45 @@
+/* Events List - Grid Layout*/
+@media (max-width: 900px) {
+  div#events .item-container {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  div#events .item-container {
+    width: 100%;
+  }
+}
+/* Events List - Tiles Layout */
+@media (max-width: 900px) {
+  .eventgallery-tiles .eventgallery-tiles-list .eventgallery-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .eventgallery-tiles .eventgallery-tiles-list .eventgallery-tile {
+    width: 100%;
+  }
+}
+/* Event List - Grid Layout */
+@media (max-width: 900px) {
+  #event .eventgallery-simplelist-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  #event .eventgallery-simplelist-tile {
+    width: 100%;
+  }
+}
+/* Event List - Tiles Layout */
+@media (max-width: 900px) {
+  #event .eventgallery-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  #event .eventgallery-tile {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=/joomla3.0/media/com_eventgallery/frontend/css/responsive.css.map */

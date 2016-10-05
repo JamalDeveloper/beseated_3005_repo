@@ -1,0 +1,390 @@
+@import "mixin-prefix.less";
+@import "events.less";
+@import "tiles-list.less";
+@import "simplelist.less";
+@import "imagelist.less";
+@import "ajax.less";
+@import "singleimage.less";
+@import "lazyload.less";
+
+/* General Styles */
+
+.pagination-limitbox .clear {
+	clear:both;
+}
+
+
+/* Captions General */
+
+.img-caption,
+.img-exif,
+.img-id {
+    font-variant: normal;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.img-caption {
+    display: block;
+
+}
+
+#cboxLoadedContent .img-exif,
+#cboxLoadedContent .img-id {
+    display: block;    
+    font-size: 0.9em;    
+}
+
+#cboxLoadedContent .img-caption,
+#cboxLoadedContent .img-exif,
+#cboxLoadedContent .img-id {
+    padding: 5px 0 0 0;
+}
+
+.img-caption-part1 {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.thumbnail .eventgallery-lazyme,
+.cart-items .cart-item img,
+.ajaxpaging #thumbs .thumbnail img {
+    /* IE8 fix to show images. Originally it was set to auto but it seems that the Android 2.3 Browser had some issues with that. */
+    max-width: 4000px !important;
+}
+
+#event .thumbnails .thumbnail img,
+.event .thumbnails .thumbnail img,
+.cart-item .thumbnail img {
+    /* IE7 ONLY!!!*/
+    margin: 0 !important;
+}
+
+.thumbnail-container a {
+    width: auto;
+}
+
+
+.thumbnails .thumbnail-container {
+    float: left;
+    position: relative;
+}
+
+.thumbnails .thumbnail {
+    margin: 3px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.thumbnails .thumbnail-container .eventgallery-add2cart,
+.thumbnails .thumbnail-container .button-cart-connector {
+    position: absolute;
+    bottom: 9px;
+    right: 12px;
+    z-index: 223;
+}
+
+.thumbnails .thumbnail-container .social-share-button {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    z-index: 223;
+}
+
+/* Cart buttons */
+
+@egfa_outline: -0.5px -0.5px #666;
+
+div.thumbnail-container .social-share-button .egfa,
+div.thumbnail-container .eventgallery-add2cart .egfa,
+.button-removeFromCart .egfa {
+    color: white;
+    text-shadow: @egfa_outline, @egfa_outline, @egfa_outline, @egfa_outline;
+}
+
+.button-removeFromCart .egfa {
+    color: orangered;
+}
+
+div.thumbnail-container .social-share-button i {
+    opacity: 0.50;
+}
+
+div.thumbnail-container:hover .social-share-button i {
+    opacity: 0.75;
+}
+
+.social-share-button:hover i {
+    opacity: 1 !important;
+}
+
+/* cart */
+
+.eventgallery-ajaxcart {
+    display: none;
+}
+
+.eventgallery-ajaxcart-internal {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.eventgallery-ajaxcart .cart-items-container {
+    min-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.eventgallery-ajaxcart .toggle-down,
+.eventgallery-ajaxcart .toggle-up {
+    display: none;
+    text-align: right;
+}
+
+.eventgallery-ajaxcart .cart-items img,
+.eventgallery-checkout .cart-items img,
+.eventgallery-cart .cart-items img {
+    height: 48px;
+    width: 48px;
+}
+
+.eventgallery-ajaxcart .cart-items .cart-item {
+    position: relative;
+    float: left;
+    margin-right: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.eventgallery-ajaxcart .cart-items .cart-item .badge {
+    position:absolute; 
+    top: -5px; 
+    right: -5px;
+}
+
+.eventgallery-ajaxcart .cart-items .cart-item .button-removeFromCart {
+    position: absolute;
+    right: -2px;
+    bottom: 5px;
+	text-decoration: none;
+}
+
+.eventgallery-ajaxcart .cart-items .cart-summary {
+    float: left;
+    width: 100%;
+}
+
+.eventgallery-ajaxcart .cart-items .thumbnail {
+    margin-bottom: 9px;
+    padding: 4px;
+}
+
+
+
+/**
+* Cart & checkout page
+*/
+
+.eventgallery-cart .cart-items table,
+.eventgallery-checkout .cart-items table {
+    width: 100%;
+}
+
+.eventgallery-checkout .checkout-form,
+.eventgallery-cart .cart-form {
+    margin-top: 20px;
+}
+
+.eventgallery-checkout fieldset,
+.eventgallery-cart fieldset {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+.eventgallery-cart .cart-items .image,
+.eventgallery-checkout .cart-items .image {
+    margin-right: 20px;
+    float: left;
+}
+
+.eventgallery-cart .cart-items .information,
+.eventgallery-checkout .cart-items .information {    
+    float: left;
+}
+
+.eventgallery-cart .cart-items .information input,
+.eventgallery-checkout .cart-items .information .quantity {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.eventgallery-cart .cart-items .information select,
+.eventgallery-checkout .cart-items .information .imagetype-details .displayname {
+    margin-bottom: 10px;
+
+}
+
+.eventgallery-cart .cart-items .price,
+.eventgallery-checkout .cart-items .price {
+    float: right;
+}
+
+.eventgallery-cart .cart-items .imagetype-details span,
+.eventgallery-checkout .cart-items .imagetype-details span{
+    display: block;
+}
+
+.eventgallery-cart .cart-summary div.subtotal,
+.eventgallery-checkout .cart-summary div.subtotal {
+    border-top: 1px solid silver;
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+
+.eventgallery-cart .cart-summary div.total,
+.eventgallery-checkout .cart-summary div.total {
+    border-top: 3px double silver;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+.eventgallery-cart .cart-summary div.surcharge,
+.eventgallery-checkout .cart-summary div.surcharge {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+.eventgallery-cart .cart-summary .subtotal-headline,
+.eventgallery-checkout .cart-summary .subtotal-headline {
+    font-size: 1.2em;
+    font-weight: bold;
+    top: 0;
+    right: 150px;
+    position: absolute;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 1.2em;
+}
+
+.eventgallery-cart .cart-summary .total-headline,
+.eventgallery-checkout .cart-summary .total-headline {
+    font-weight: bold;
+    font-size: 1.4em;
+    top: 0;
+    right: 150px;
+    position: absolute;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 1.4em;
+}
+
+.eventgallery-cart .cart-summary .surcharge-headline,
+.eventgallery-checkout .cart-summary .surcharge-headline {
+    font-size: 1.0em;
+    top: 0;
+    right: 150px;
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.0em;
+    font-weight: normal;
+}
+
+.eventgallery-cart .cart-summary span.subtotal,
+.eventgallery-checkout .cart-summary span.subtotal {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 1em;
+    line-height: 1.2em;
+}
+
+.eventgallery-cart .cart-summary span.total,
+.eventgallery-checkout .cart-summary span.total {
+    font-weight: bold;
+    font-size: 1.4em;
+    display: block;
+    margin-top: 1em;
+    line-height: 1.4em;
+}
+
+.eventgallery-cart .cart-summary span.surcharge,
+.eventgallery-checkout .cart-summary span.surcharge {
+    font-size: 1.0em;
+    display: block;
+    margin-top: 1em;
+    line-height: 1.0em;
+}
+
+.eventgallery-cart .cart-summary .vat,
+.eventgallery-checkout .cart-summary .vat {
+    font-size: 0.7em;
+    display: block;
+}
+
+.eventgallery-checkout .review-shipping-address,
+.eventgallery-checkout .review-billing-address {
+    float: left;
+    width: 49%;
+    margin-bottom: 20px;    
+}
+
+.social-sharing-toolbox {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    .box-shadow( 0 1px 2px 0 rgba(0, 0, 0, 0.5) );
+    z-index: 10000;
+}
+
+.eventgallery-track-my-order .form,
+.eventgallery-track-my-order .signin
+{
+    float: left;
+    width:50%;
+    .box-sizing( border-box );
+    padding: 20px;
+    min-width: 350px;
+}
+
+.eventgallery-track-my-order .signin {
+    min-width: 250px;
+}
+
+.eventgallery-track-my-order .desc {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    .eventgallery-track-my-order .form,
+    .eventgallery-track-my-order .signin
+    {
+        width:100%;
+    }
+
+}
+
+.eventgallery-footer-disclaimer {
+    margin-top: 20px;
+}
+
+/** Bootstrap fixes */
+
+.eventgallery-thumbnails,
+.event div.thumbnails,
+.mod-eventgallery-event div.thumbnails  {
+    margin-left: 0;
+}

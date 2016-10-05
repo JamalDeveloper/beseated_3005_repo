@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<!--<field
+			name="published"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			statuses="0,1"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>-->
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="b.id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="name ASC">SORT_BY_FULL_NAME_ASC</option>
+			<option value="name DESC">SORT_BY_FULL_NAME_DESC</option>
+			<option value="email ASC">SORT_BY_EMAIL_ASC</option>
+			<option value="email DESC">SORT_BY_EMAIL_DESC</option>
+			<option value="phone ASC">SORT_BY_MOBILE_ASC</option>
+			<option value="phone DESC">SORT_BY_MOBILE_DESC</option>
+			<option value="birthdate ASC">SORT_BY_BIRTHDATE_ASC</option>
+			<option value="birthdate DESC">SORT_BY_BIRTHDATE_DESC</option>
+			<option value="registerDate ASC">SORT_BY_ACCOUNT_CREATED_DATE_ASC</option>
+			<option value="registerDate DESC">SORT_BY_ACCOUNT_CREATED_DATE_DESC</option>
+
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_LGOM_POSTS_LIST_LIMIT"
+			description="COM_LGOM_POSTS_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

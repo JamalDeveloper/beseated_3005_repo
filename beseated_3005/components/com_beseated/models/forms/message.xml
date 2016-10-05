@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="msg_id"
+            name="msg_id"
+            type="hidden" />
+
+        <!-- <field
+            id="library_id"
+            name="library_id"
+            type="hidden" />-->
+
+        <field
+            id="userid"
+            name="userid"
+            type="hidden" />
+
+        <field
+            id="message"
+            name="message"
+            type="textarea"
+            label="com_bcted_MESSAGE_CAPTION_LABEL"
+            description="com_bcted_MESSAGE_CAPTION_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="com_bcted_MESSAGE_CAPTION_HINT"/>
+
+       <field
+            name="image"
+            type="file"
+            label="com_bcted_MESSAGE_IMAGE_LABEL"
+            class="inputbox"
+            default=""
+            accept="image/*"
+        />
+
+         <field
+            name="audio"
+            type="file"
+            label="com_bcted_MESSAGE_AUDIO_LABEL"
+            class="inputbox"
+            default=""
+            accept="image/*"
+        />
+
+        <field
+            name="video"
+            type="file"
+            label="com_bcted_MESSAGE_VIDEO_LABEL"
+            class="inputbox"
+            default=""
+            accept="image/*"
+        />
+
+        <field
+            id="author"
+            name="author"
+            type="text"
+            label="com_bcted_MESSAGE_AUTHOR_LABEL"
+            description="com_bcted_MESSAGE_AUTHOR_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="com_bcted_MESSAGE_AUTHOR_HINT"/>
+
+        <field
+        id="youtube"
+        name="youtube"
+        type="text"
+        label="com_bcted_MESSAGE_YOUTUBE_LABEL"
+        description="com_bcted_MESSAGE_YOUTUBE_DESC"
+        size="40"
+        class="inputbox"
+        default=""
+        hint="com_bcted_MESSAGE_YOUTUBE_HINT"/>
+
+        <field
+            name="library_id"
+            type="sql"
+            default="10"
+            label="com_bcted_MESSAGE_LIBRARY_LABEL"
+            query="SELECT library_id, lib_name FROM #__heartdart_library WHERE published=1"
+            key_field="library_id"
+            value_field="lib_name"
+            required="true">
+                <option value="">Please select Library</option>
+        </field>
+
+        <field
+            name="upload"
+            type="list"
+            label="com_bcted_MESSAGE_UPLOAD_LABEL"
+            required="true">
+                <option value="none">Please select File</option>
+                <option value="image">Upload Image</option>
+                <option value="video">Upload Video</option>
+                <option value="audio">Upload Audio</option>
+                <option value="youtube">Upload Video From YouTube</option>
+
+        </field>
+    </fieldset>
+
+</form>
+

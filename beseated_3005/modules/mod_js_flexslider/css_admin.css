@@ -1,0 +1,192 @@
+/***********************************************************************************************
+**
+**									CSS style for Template manager
+**									
+**
+************************************************************************************************/
+
+
+.tab-content .row-fluid .span0, .tab-content .row-fluid .span3, .tab-content .row-fluid .span6, .tab-content .row-fluid .span9, .tab-content .row-fluid .span12 {
+width:95%;
+}
+
+.tab-content .form-vertical {
+background: #f0f0f0;
+border:2px solid #ddd;
+margin-top:40px;
+padding:20px;
+}
+
+.info-labels + div {
+background: none repeat scroll 0 0 #EEEEEE;
+color: #000000;
+font-size: 110%;
+font-style: italic;
+font-weight: normal;
+margin: 15px 0 30px;
+padding: 15px 10px 10px 20px;
+}
+
+
+.control-group label {
+width:250px;
+}
+
+span.spacer {
+display:block;
+clear:both;
+margin-bottom:20px;
+padding-top:20px;
+border-bottom : 2px dotted #aaa;
+width:900px;
+}
+
+span.spacer label {
+display:none;
+}
+
+@media screen and (max-width: 979px) {
+
+	span.spacer {
+	width:auto;
+	}
+
+}
+
+
+.row-fluid [class*="span"]:first-child {
+margin-left: 15px;
+}
+.row-fluid [class*="span"]:first-child {
+margin-left: 15px;
+}
+.row-fluid [class*="span"] {
+margin-left: 15px;
+}
+
+
+
+
+
+
+.panel, .accordion-group {
+background: #ddd;
+background-image: -moz-linear-gradient(100% 100% 90deg, rgba(225,225,225,1), rgba(255,255,255,1));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,1)), to(rgba(225,225,225,1)));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1');
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+-moz-box-shadow: 1px 1px 2px #ddd;
+-webkit-box-shadow: 1px 1px 2px #ddd;
+border-box-shadow: 1px 1px 2px #ddd;
+border: 1px solid #ccc;
+padding: 6px 10px;		
+color: #444;		
+text-decoration: none;
+}
+
+.pane-sliders .title {
+padding: 4px;
+}
+
+.pane-sliders .panel h3 {
+border-bottom:none;
+}
+
+.pane-sliders .panel h3.pane-toggler-down {
+padding-bottom:10px;
+margin-bottom:10px;
+border-bottom: 2px dotted #d9d9d9 ;
+}
+
+.accordion-inner {
+border-top: 2px dotted #d9d9d9 ;
+padding-top:24px;
+}
+
+.panelform a {
+color:#828627;
+}
+
+table.admintable td.paramlist_key {
+font-weight:normal;text-transform:uppercase;
+text-align:left;
+}
+
+table.admintable td.paramlist_value label {
+text-transform:none;
+}
+
+table.admintable td.key, table.admintable td.paramlist_key,.pane-sliders .content,.pane-sliders .panel h3, div.panel fieldset {
+background:none;
+}
+
+div.panel fieldset {
+margin-bottom:0;
+padding-bottom:0;
+}
+
+table.admintable td.key, table.admintable td.paramlist_key {
+border:none;
+}
+
+form label, form span.faux-label {
+color:#394a12;
+}
+
+.panelform input, .panelform select {
+padding:5px;
+border-radius:3px;
+}
+
+.panelform input[type="radio"] {
+margin: 10px 5px 0 0;
+}
+
+#jform_params_target {
+width: 110px;
+}
+
+.pane-toggler-down span {
+padding: 7px 0px 7px 40px;
+padding-left:30px!important;
+font-size: 15px;
+font-weight:normal;
+color:#ec6104;
+}
+
+.pane-toggler span {
+padding: 7px 0px 7px 40px;
+padding-left:30px!important;
+font-size: 15px;
+font-weight:normal;
+color:#394a12;
+}
+
+.pane-toggler span:hover {
+color:#146295;
+}
+
+.button2-left {
+margin : 5px 5px 0 5px ;
+}
+
+.panelform a {
+color: #555;
+}
+
+.panelform a:hover {
+color: #ec6104;
+}
+
+.adminformlist .fltlft span {
+display: inline-block;
+margin: 9px 0 0 9px;
+}
+
+/** 		Hide the outline 	**/
+
+*:hover, *:active, *:focus, input:focus, textarea:focus {
+outline:none !important;
+}

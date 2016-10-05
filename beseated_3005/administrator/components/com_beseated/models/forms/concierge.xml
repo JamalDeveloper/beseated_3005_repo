@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+
+        <field
+            id="concierge_id"
+            name="concierge_id"
+            type="hidden" />
+
+        <field
+            id="city"
+            name="city"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+
+            label="COM_BESEATED_CONCIERGES_CITY_NAME_LABEL"
+            hint="COM_BESEATED_CONCIERGES_CITY_NAME_HINT" />
+
+       <field
+            id="phone_no"
+            name="phone_no"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+
+            label="COM_BESEATED_CONCIERGES_PHONE_NO_LABEL"
+            hint="COM_BESEATED_CONCIERGES_PHONE_NO_HINT" />
+        <field
+            name="is_default"
+            type="radio"
+            default="0"
+            class="radio btn-group"
+            label="COM_BESEATED_DEFAULT_LABEL"
+            description="">
+        <option value ="1">Yes</option>
+        <option value ="0">No</option>
+
+        </field>
+
+        <field
+           id="time_stamp"
+           name="time_stamp"
+           type="hidden"
+         />
+
+
+    </fieldset>
+</form>
+

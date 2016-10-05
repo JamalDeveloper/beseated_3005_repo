@@ -1,0 +1,7 @@
+ffmpeg version 0.8.17-4:0.8.17-0ubuntu0.12.04.1, Copyright (c) 2000-2014 the Libav developers
+  built on Mar 16 2015 13:26:50 with gcc 4.6.3
+The ffmpeg program is only provided for script compatibility and will be removed
+in a future release. It has been deprecated in the Libav project to allow for
+incompatible command line syntax improvements in its replacement called avconv
+(see Changelog for details). Please use avconv instead.
+/var/www/beseated_new/Yacht/21/f83776e82d2b4db2805b40e5.mp4: No such file or directory

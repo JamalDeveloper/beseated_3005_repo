@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="event_id"
+            name="event_id"
+            type="hidden" />
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="published"
+            name="published"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="city"
+            name="city"
+            type="hidden" />
+
+         <field
+            id="latitude"
+            name="latitude"
+            type="hidden" />
+
+         <field
+            id="longitude"
+            name="longitude"
+            type="hidden" />
+
+        <field
+            id="time_stamp"
+            name="time_stamp"
+            type="hidden" />
+
+        <!-- <field
+            id="image"
+            name="image"
+            type="multiuploader"
+            label="COM_BESEATED_EVENT_IMAGE_LABEL"
+            description="COM_BESEATED_EVENT_IMAGE_DESC"
+            size="40"
+            class="inputbox"
+            directory="beseated/Event"
+            required="required"
+            hint="COM_BESEATED_EVENT_IMAGE_HINT"/> -->
+
+         <field
+                id="image"
+                name="image"
+                type="file"
+                label="COM_BESEATED_EVENT_IMAGE_LABEL"
+                description="COM_BESEATED_EVENT_IMAGE_DESC"
+            />
+
+        <field
+            id="event_name"
+            name="event_name"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_EVENT_NAME_LABEL"
+            description="COM_BESEATED_EVENT_NAME_DESC"
+            hint="COM_BESEATED_EVENT_NAME_HINT" />
+
+        <field
+            id="event_desc"
+            name="event_desc"
+            type="textarea"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_EVENT_DESC_LABEL"
+            description="COM_BESEATED_EVENT_DESC"
+             />
+
+      <!--   <field
+            id="price_per_ticket"
+            name="price_per_ticket"
+            type="text"
+            required="required"
+            label="COM_BESEATED_EVENT_TICKET_PRICE_LABEL"
+            hint="COM_BESEATED_EVENT_TICKET_PRICE_HINT"
+             /> -->
+
+        <field
+            id="currency_code"
+            name="currency_code"
+            type="list"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_EVENT_CURRENCY_CODE_LABEL"
+            description="COM_BESEATED_EVENT_CURRENCY_CODE_DESC"
+            hint="COM_BESEATED_EVENT_CURRENCY_CODE_HINT" >
+                <option value="">Select currency</option>
+                <option value="AED">AED</option>
+                <option value="USD">United States Dollar</option>
+                <option value="GBP">British Pound</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="AUD">Australian Dollar</option>
+        </field>
+
+        <field
+            id="location"
+            name="location"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            label="COM_BESEATED_EVENT_LOCATION_LABEL"
+            description="COM_BESEATED_EVENT_LOCATION_DESC"
+            hint="COM_BESEATED_EVENT_LOCATION_HINT" />
+
+        <field
+            id="total_ticket"
+            name="total_ticket"
+            type="text"
+            class="readonly"
+            default="0"
+            readonly="true"
+            label="COM_BESEATED_TOTAL_TICKET_LABEL"
+            />
+
+             <field
+            id="available_ticket"
+            name="available_ticket"
+            type="text"
+            class="readonly"
+             default="0"
+            readonly="true"
+            label="COM_BESEATED_AVAILABLE_TICKET_LABEL"
+             />
+
+            <field name="event_date"
+                    type="calendar"
+                    label="COM_BESEATED_EVENT_DATE_LABEL"
+                    description=""
+                    default="NOW"
+                    required="required"
+                    format="%d-%m-%Y" />
+
+            <field
+            id="event_time"
+            name="event_time"
+            type="text"
+            default=""
+            size="5"
+            required="required"
+            label="COM_BESEATED_EVENT_TIME_LABEL"
+            hint="COM_BESEATED_EVENT_TIME_HINT"
+             />
+
+    </fieldset>
+</form>
+

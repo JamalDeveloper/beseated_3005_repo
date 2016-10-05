@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="protection_booking_id"
+            name="protection_booking_id"
+            type="hidden" />
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="time_stamp"
+            name="time_stamp"
+            type="hidden" />
+
+
+        <field
+                name="user_id"
+                type="Userlist"
+                label="COM_BESEATED_USER_NAME"
+                description="COM_BESEATED_USER_NAME"
+            />
+
+        <field
+                name="protection_id"
+                type="Protectionlist"
+                label="COM_BESEATED_PROTECTION_NAME_LABEL"
+                description="COM_BESEATED_PROTECTION_NAME_LABEL"
+            />
+
+
+        <field
+            id="total_hours"
+            name="total_hours"
+            type="text"
+            required="required"
+            label="COM_BESEATED_PROTECTION_BOOKING_HOURS"
+            hint="COM_BESEATED_PROTECTION_BOOKING_HOURS"
+             />
+
+         <field
+            id="total_guard"
+            name="total_guard"
+            type="text"
+            required="required"
+            label="COM_BESEATED_PROTECTION_BOOKING_TOTAL_GUARD"
+            hint="COM_BESEATED_PROTECTION_BOOKING_TOTAL_GUARD"
+             />
+
+        <field
+            id="meetup_location"
+            name="meetup_location"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_PROTECTION_BOOKING_MEETUP_LOCATION"
+            hint="COM_BESEATED_PROTECTION_BOOKING_MEETUP_LOCATION" />
+
+            <field name="booking_date"
+                    type="calendar"
+                    label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_DATE"
+                    description=""
+                    default="NOW"
+                    format="%d-%m-%Y" />
+
+            <field
+            id="booking_time"
+            name="booking_time"
+            type="text"
+            default=""
+            size="5"
+            required="required"
+            label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+            hint="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+             />
+
+    </fieldset>
+</form>
+

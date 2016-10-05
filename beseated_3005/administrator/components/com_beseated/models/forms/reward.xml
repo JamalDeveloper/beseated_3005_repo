@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+        <field
+            id="reward_id"
+            name="reward_id"
+            type="hidden" />
+
+       <field name="reward_name" id="reward_name" type="text"
+
+            label="COM_BESEATED_FORM_LBL_REWARD_REWARD_NAME"
+                 required="true"  />
+
+       <field name="reward_desc" id="reward_desc" type="textarea"
+
+            label="COM_BESEATED_FORM_LBL_REWARD_REWARD_DESC"
+            option_on="Yes"
+            option_off="Yes" />
+
+        <field name="reward_coin" id="reward_coin" type="text"
+        label="COM_BESEATED_FORM_LBL_REWARD_REWARD_COIN"
+        required="true"  />
+
+       <field name="published" id="published" type="radio"
+
+            label="COM_BESEATED_FORM_LBL_REWARD_PUBLISHED"
+            default="1"
+            class="radio btn-group"
+            description="">
+                <option value="1">Published</option>
+                <option value="0">Unpublished</option>
+        </field>
+
+       <field
+        name="image"
+        id="image"
+        type="file"
+        label="COM_BESEATED_FORM_LBL_REWARD_IMAGE"
+        />
+
+       <field name="created" type="createdby" default=""
+            label="COM_BESEATED_FORM_LBL_REWARD_CREATED"
+       />
+
+	</fieldset>
+
+</form>

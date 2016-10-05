@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="service_id"
+            name="service_id"
+            type="hidden" />
+
+        <field
+            id="company_id"
+            name="company_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+        <field
+            id="service_name"
+            name="service_name"
+            type="text"
+            label="COM_BCTED_COMPANY_ADD_SERVICE_NAME_LABEL"
+            description="COM_BCTED_COMPANY_ADD_SERVICE_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_COMPANY_ADD_SERVICE_NAME_HINT"/>
+
+        <field
+            id="service_image"
+            name="service_image"
+            type="file"
+            label="COM_BCTED_COMPANY_ADD_SERVICE_IMAGE_LABEL"
+            description="COM_BCTED_COMPANY_ADD_SERVICE_IMAGE_DESC"
+            class="inputbox"
+            hint="COM_BCTED_COMPANY_ADD_SERVICE_IMAGE_HINT"/>
+
+        <field
+            id="service_description"
+            name="service_description"
+            type="textarea"
+            label="COM_BCTED_COMPANY_ADD_SERVICE_DESCRIPTION_LABEL"
+            description="COM_BCTED_COMPANY_ADD_SERVICE_DESCRIPTION_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_COMPANY_ADD_SERVICE_DESCRIPTION_HINT"/>
+
+        <field
+            id="service_price"
+            name="service_price"
+            type="text"
+            label="COM_BCTED_COMPANY_ADD_SERVICE_PRICE_LABEL"
+            description="COM_BCTED_COMPANY_ADD_SERVICE_PRICE_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_COMPANY_ADD_SERVICE_PRICE_HINT"/>
+    </fieldset>
+</form>
+

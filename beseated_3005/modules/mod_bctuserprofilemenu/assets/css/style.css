@@ -1,0 +1,77 @@
+/* = App Zoom
+ * Nick - AetherThemes.com
+ * Schro - joomlamini.com
+-------------------------------------------------------------- */
+
+html.ie .loupe { display: none; }
+.loupe-gallery .content { margin-top: 0; }
+.loupe-gallery { position:absolute; z-index:200; margin: 80px 0 0 191px; *margin-left:103px; }
+.loupe-gallery .loupe-container,
+.loupe-gallery .loupe-container.degraded { display:none; }
+.loupe-gallery .loupe-container.active { display:block; }
+.loupe-gallery .loupe {
+-webkit-transform:translate(900px, 0);
+   -moz-transform:translate(900px, 0);
+    -ms-transform:translate(900px, 0);
+        transform:translate(900px, 0);
+}
+
+@-webkit-keyframes touchBobble {
+0%   { -webkit-transform:scale(1.04); }
+100%  { -webkit-transform:scale(1); }
+}
+
+.loupe-container { position:relative; z-index:200; }
+.loupe { position:absolute; z-index:150; top:55px; width:265px; height:265px; visibility:hidden; cursor:move; cursor:-webkit-grab; cursor:-moz-grab; cursor:grabbing; }
+.loupe.grabbing { cursor:none; *cursor:move; }
+.loupe .loupe-image { position:absolute; top:0; left:0; z-index:3; }
+.loupe .canvas-fade { position:absolute; display:inline-block; border-radius:100px; top:24px; left:23px; -webkit-transition:opacity 0.4s; -moz-transition:opacity 0.4s; transition:opacity 0.4s; z-index:1; }
+.loupe .tooltip { 
+	display:none; z-index:2; position:absolute; top:110px; left:50%; margin-left:-84px; width:145px; padding:10px 0 9px; border-radius:25px; color:#fff; text-align:center; opacity:0;
+	background:rgb(32,32,32);
+	background:rgba(32,32,32,0.7);
+	-webkit-transition:opacity 0.6s ease;
+	   -moz-transition:opacity 0.7s ease;
+	        transition:opacity 0.7s ease;
+}
+.loupe .canvas { display:inline-block; border-radius:100px; margin:18px 0 0 -18px; *position:relative; *top:18px;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=90,  FinishX=100, StartY=75, FinishY=85), progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=77,  FinishX=87, StartY=10, FinishY=0), progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=10,  FinishX=0, StartY=75, FinishY=85), progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=20,  FinishX=10, StartY=10, FinishY=0)';
+	*filter:progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=90,  FinishX=100, StartY=75, FinishY=85)
+	progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=77,  FinishX=87, StartY=10, FinishY=0)
+	progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=10,  FinishX=0, StartY=75, FinishY=85)
+	progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=20,  FinishX=10, StartY=10, FinishY=0);
+}
+
+.loupe-still { position: absolute; z-index: 100; left: 50%; margin-left: -470px; top: -30px; }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.loupe { display: none; }
+	.loupe-gallery { margin-left: 100px; }
+	.gallery-content { width: 80%; height: auto; }
+	.loupe-still { width: 120%; height: auto; top: -20px; margin-left: -330px;}
+	.screenshot img { width: 186px; }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.screenshot { margin-bottom: 120px; }
+	.screenshot:last-child { margin-bottom: 0px; }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.loupe { display: none; }
+	.loupe-gallery { margin-left: 70px; margin-top: 50px; }
+	.gallery-content { width: 300px; height: auto; }
+	.loupe-still { width: 490px; height: auto; top: -15px; margin-left: -249px; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.loupe { display: none; }
+	.loupe-gallery { margin-left: 40px; margin-top: 50px; }
+	.gallery-content { width: 220px; height: auto; }
+	.loupe-still { width: 360px; height: auto; top: -10px; margin-left: -179px; }
+}
+

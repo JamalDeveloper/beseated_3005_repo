@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="beseated" method="upgrade">
+	<name>plg_beseated_ccavenue</name>
+	<author>Tailored Sollution</author>
+	<creationDate>13th Sept 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>inquiry@tasolglobal.com</authorEmail>
+	<authorUrl>www.tasolglobal.org</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_BESEATED_CCAVENUE_DESC</description>
+	<files>
+		<filename plugin="ccavenue">ccavenue.php</filename>
+		<filename plugin="ccavenue">cbdom_main.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_beseated_ccavenue.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_beseated_ccavenue.sys.ini</language>
+	</languages>
+</extension>

@@ -1,0 +1,18 @@
+For setup Beseated_3005 in local or server you have to set following configuration setting from admin panel or configuration.php:
+
+$host     = 'localhost';
+user      = 'root';
+$password = '';
+$db       = 'beseated_3005'
+$dbprefix = 'axet6_';
+$log_path = '/var/www/html/my/beseated_3005/logs';
+$tmp_path = '/var/www/html/my/beseated_3005/tmp';
+
+
+
+Database Path : /beseated_3005/database/beseated_3005.sql
+
+Admin Credential :
+
+Username : admin
+Password : admin123

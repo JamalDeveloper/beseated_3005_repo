@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="bottle_id"
+            name="bottle_id"
+            type="hidden" />
+
+        <field
+            id="venue_id"
+            name="venue_id"
+            type="hidden" />
+
+        <field
+            id="user_id"
+            name="user_id"
+            type="hidden" />
+
+        <field
+            id="brand_name"
+            name="brand_name"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_BOTTLE_NAME_LABEL"
+            description="COM_BCTED_CLUB_ADD_BOTTLE_NAME_DESC"
+            class="inputbox"
+            size="40"
+            default=""
+            required="required"
+            hint="COM_BCTED_CLUB_ADD_BOTTLE_NAME_HINT"
+            />
+
+         <field
+            id="size"
+            name="size"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_BOTTLE_SIZE_LABEL"
+            description="COM_BCTED_CLUB_ADD_BOTTLE_SIZE_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CLUB_ADD_BOTTLE_SIZE_HINT"/>
+
+        <field
+            id="image"
+            name="image"
+            type="file"
+            label="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_IMAGE_LABEL"
+            description="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_IMAGE_DESC"
+            class="inputbox"
+            hint="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_IMAGE_HINT"/>
+
+        <field
+            id="price"
+            name="price"
+            type="text"
+            label="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_PRICE_LABEL"
+            description="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_PRICE_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            hint="COM_BCTED_CLUB_ADD_BOTTLE_BOTTLE_PRICE_HINT"/>
+
+        <field
+            id="bottle_type"
+            name="bottle_type"
+            type="sql"
+            default=""
+            class="inputbox"
+            query="SELECT bottle_type_name FROM #__beseated_venue_bottle_type WHERE published='1'"
+            key_field="bottle_type_name"
+            value_field="bottle_type_name"
+            label="COM_BCTED_CLUB_ADD_BOTTLE_TYPE_LABEL"
+            description="COM_BCTED_CLUB_ADD_BOTTLE_TYPE_DESC">
+            <option value="">Select Type</option>
+        </field>
+    </fieldset>
+</form>
+

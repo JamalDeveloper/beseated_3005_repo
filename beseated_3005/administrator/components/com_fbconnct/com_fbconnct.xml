@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>COM_FBCONNCT</name>
+	<creationDate>2013-08-24</creationDate>
+	<author>Saran Chamling</author>
+	<authorEmail>saaraan@gmail.com</authorEmail>
+	<authorUrl>http://www.sanwebe.com</authorUrl>
+	<version>3.4.2</version>
+	<license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+	<copyright>Copyright (C) 2011 http://www.sanwebe.com. All rights reserved.</copyright>
+	<description>(For Joomla 3.x) - Lets Facebook users quickly register on your site. Need to enable module in module manager.</description>
+	<scriptfile>process.script.php</scriptfile>
+	<install>
+		<sql>
+		<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+	<modules>
+		<module folder="modules" module="mod_fbconnct" name="Facebook Graph Connect Login" />
+	</modules>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>fbconnct.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>inc</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">site/en-GB.com_fbconnct.ini</language>
+		<language tag="en-GB">site/en-GB.com_fbconnct.sys.ini</language>
+	</languages>
+	<administration>
+			<menu view="fbconnct" img="components/com_fbconnct/assets/facebookicon.png">COM_FBCONNCT</menu>
+			<submenu>
+				<menu view="fbconnct" img="components/com_fbconnct/assets/16home.png">FACEBOOK_CONNECT</menu>
+				<menu view="users" img="components/com_fbconnct/assets/16fbuser.png">CONNECTED_USERS</menu>
+				<menu view="test" img="components/com_fbconnct/assets/16test.png">FACEBOOK_TEST</menu>
+			</submenu>
+			<files folder="admin">
+					<filename>index.html</filename>
+					<filename>fbconnct.php</filename>
+					<filename>controller.php</filename>
+					<filename>config.xml</filename>
+					<filename>install.sql</filename>
+					<folder>assets</folder>
+					<folder>models</folder>
+					<folder>helpers</folder>
+					<folder>views</folder>
+			</files>  
+			<languages folder="languages">
+					<language tag="en-GB">admin/en-GB.com_fbconnct.ini</language>
+				 	<language tag="en-GB">site/en-GB.com_fbconnct.sys.ini</language>
+			</languages>
+	</administration>
+	<updateservers>
+		<server type="extension" priority="2" name="com_fbconnct">http://sanwebe.com/wp-downloads/facebook_connect_update.xml</server>
+	</updateservers>
+</extension>

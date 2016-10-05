@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="bottle_type_id"
+            name="bottle_type_id"
+            type="hidden" />
+
+        <field
+            id="published"
+            name="published"
+            type="hidden" />
+
+        <field
+            id="bottle_type_name"
+            name="bottle_type_name"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_BOTTLE_NAME_LABEL"
+            description="COM_BESEATED_BOTTLE_NAME_DESC"
+            hint="COM_BESEATED_BOTTLE_NAME_HINT"/>
+
+    </fieldset>
+</form>
+

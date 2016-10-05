@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="venue_id"
+            name="venue_id"
+            type="hidden" />
+
+         <field
+            id="venue_name"
+            name="venue_name"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            readonly="true"
+            label="COM_BESEATED_VENUE_NAME_LABEL"
+            description="COM_BESEATED_VENUE_NAME_DESC"
+            hint="COM_BESEATED_VENUE_NAME_HINT" />
+
+        <field
+            id="location"
+            name="location"
+            type="text"
+            size="40"
+            class="inputbox"
+            readonly="true"
+            default=""
+            label="COM_BESEATED_VENUE_LOCATION_LABEL"
+            description="COM_BESEATED_VENUE_LOCATION_DESC"
+            hint="COM_BESEATED_VENUE_LOCATION_HINT" />
+
+        <field
+            id="city"
+            name="city"
+            type="hidden" />
+
+        <field
+            id="currency_code"
+            name="currency_code"
+            type="list"
+            class="inputbox"
+            readonly="true"
+            default=""
+            label="COM_BESEATED_VENUE_CURRENCY_CODE_LABEL"
+            description="COM_BESEATED_VENUE_CURRENCY_CODE_DESC"
+            hint="COM_BESEATED_VENUE_CURRENCY_CODE_HINT" >
+                <option value="">Select currency</option>
+                <option value="AED">AED</option>
+                <option value="USD">United States Dollar</option>
+                <option value="GBP">British Pound</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="AUD">Australian Dollar</option>
+        </field>
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+         <field
+            id="deposit_per"
+            name="deposit_per"
+            type="text"
+            size="4"
+            class="inputbox"
+            default=""
+            label="COM_BESEATED_VENUE_DEPOSIT_PER_LABEL"
+            description="COM_BESEATED_VENUE_DEPOSIT_PER_DESC"
+            hint="COM_BESEATED_VENUE_DEPOSIT_PER_HINT" />
+
+            <field
+            id="refund_policy"
+            name="refund_policy"
+            type="text"
+            size="4"
+            class="inputbox"
+            default=""
+            label="COM_BESEATED_ELEMENT_REFUND_POLICY_LABEL"
+            description="COM_BESEATED_ELEMENT_REFUND_POLICY_LABEL"
+            hint="COM_BESEATED_ELEMENT_REFUND_POLICY_HOUR_HINT" />
+
+        <field
+            id="latitude"
+            name="latitude"
+            type="hidden" />
+
+         <field
+            id="longitude"
+            name="longitude"
+            type="hidden" />
+
+    </fieldset>
+</form>
+

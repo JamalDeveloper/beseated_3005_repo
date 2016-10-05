@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="yacht_booking_id"
+            name="yacht_booking_id"
+            type="hidden" />
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="time_stamp"
+            name="time_stamp"
+            type="hidden" />
+
+
+        <field
+                name="user_id"
+                type="Userlist"
+                label="COM_BESEATED_USER_NAME"
+                description="COM_BESEATED_USER_NAME"
+            />
+
+        <field
+                name="yacht_id"
+                type="Yachtlist"
+                label="COM_BESEATED_YACHT_NAME_LABEL"
+                description="COM_BESEATED_YACHT_NAME_LABEL"
+            />
+
+
+        <field
+            id="total_hours"
+            name="total_hours"
+            type="text"
+            required="required"
+            label="COM_BESEATED_PROTECTION_BOOKING_HOURS"
+            hint="COM_BESEATED_PROTECTION_BOOKING_HOURS"
+             />
+
+            <field name="booking_date"
+                    type="calendar"
+                    label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_DATE"
+                    description=""
+                    default="NOW"
+                    format="%d-%m-%Y" />
+
+            <field
+            id="booking_time"
+            name="booking_time"
+            type="text"
+            default=""
+            size="5"
+            required="required"
+            label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+            hint="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_TIME"
+             />
+
+    </fieldset>
+</form>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="guest_booking_id"
+            name="guest_booking_id"
+            type="hidden" />
+
+        <field
+            id="currency_sign"
+            name="currency_sign"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="time_stamp"
+            name="time_stamp"
+            type="hidden" />
+
+
+        <field
+                name="user_id"
+                type="Userlist"
+                label="COM_BESEATED_USER_NAME"
+                description="COM_BESEATED_USER_NAME"
+            />
+
+        <field
+                name="venue_id"
+                type="Venuelistguest"
+                label="COM_BESEATED_VENUE_NAME_LABEL"
+                description="COM_BESEATED_VENUE_NAME_LABEL"
+            />
+
+         <field
+            id="male_guest"
+            name="male_guest"
+            type="text"
+            required="required"
+            label="COM_BESEATED_VENUE_TABLE_BOOKING_TOTAL_MALE"
+            hint="COM_BESEATED_VENUE_TABLE_BOOKING_TOTAL_MALE"
+             />
+
+         <field
+            id="female_guest"
+            name="female_guest"
+            type="text"
+            required="required"
+            label="COM_BESEATED_VENUE_TABLE_BOOKING_TOTAL_FEMALE"
+            hint="COM_BESEATED_VENUE_TABLE_BOOKING_TOTAL_FEMALE"
+             />
+
+            <field name="booking_date"
+                    type="calendar"
+                    label="COM_BESEATED_CHAUFFEUR_BOOKING_BOOKING_DATE"
+                    description=""
+                    default="NOW"
+                    format="%d-%m-%Y" />
+
+    </fieldset>
+</form>
+

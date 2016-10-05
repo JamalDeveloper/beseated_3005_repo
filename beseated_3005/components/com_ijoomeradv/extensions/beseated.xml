@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="extensions" method="upgrade">
+	<name>Beseated</name>
+	<version>1.0</version>
+	<extension_classname>beseated</extension_classname>
+	<extension_option>com_beseated</extension_option>
+
+	<files>
+		<folder extensions="beseated">theme</folder>
+		<folder extensions="beseated">tmpl</folder>
+		<folder extensions="beseated">language</folder>
+
+		<filename extensions="beseated">beseated.php</filename>
+		<filename extensions="beseated">helper.php</filename>
+		<filename extensions="beseated">users.php</filename>
+		<filename extensions="beseated">index.html</filename>
+
+		<image extensions="beseated">beseated.png</image>
+		<image extensions="beseated">beseated_48.png</image>
+	</files>
+
+	<config>
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_VENUE_LIST_LIMIT"
+			value="10"
+			description="COM_IJOOMERADV_BESEATED_VENUE_LIST_LIMIT_EXPLAIN"
+			options=""
+			type="text"
+			group="pagination"
+			server="0">BESEATED_VENUE_LIST_LIMIT
+		</cfg>
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_VENUE_TABLE_LIST_LIMIT"
+			value="10"
+			description="COM_IJOOMERADV_BESEATED_VENUE_TABLE_LIST_LIMIT_EXPLAIN"
+			options=""
+			type="text"
+			group="pagination"
+			server="0">BESEATED_VENUE_TABLE_LIST_LIMIT
+		</cfg>
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_COMPANY_LIST_LIMIT"
+			value="10"
+			description="COM_IJOOMERADV_BESEATED_COMPANY_LIMIT_LIST_LBL_EXPLAIN"
+			options=""
+			type="text"
+			group="pagination"
+			server="0">BESEATED_COMPANY_LIST_LIMIT
+		</cfg>
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_COMPANY_SERVICE_LIST_LIMIT"
+			value="10"
+			description="COM_IJOOMERADV_BESEATED_COMPANY_SERVICE_LIST_LIMIT_EXPLAIN"
+			options=""
+			type="text"
+			group="pagination"
+			server="0">BESEATED_COMPANY_SERVICE_LIST_LIMIT
+		</cfg>
+
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_GENERAL_LIST_LIMIT"
+			value="10"
+			description="COM_IJOOMERADV_BESEATED_GENERAL_LIST_LIMIT_EXPLAIN"
+			options=""
+			type="text"
+			group="pagination"
+			server="0">BESEATED_GENERAL_LIST_LIMIT
+		</cfg>
+
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_AUTO_PAYMENT_TITLE"
+			value="0"
+			description="COM_IJOOMERADV_BESEATED_AUTO_PAYMENT_EXPLAIN"
+			options="0::No;;1::Yes"
+			type="select"
+			group="general"
+			server="0">COM_IJOOMERADV_BESEATED_AUTO_PAYMENT
+		</cfg>
+
+		<cfg
+			caption="COM_IJOOMERADV_BESEATED_RADIOUS_FOR_SEARCH"
+			value="0"
+			description="COM_IJOOMERADV_BESEATED_RADIOUS_USED_IN_SEARCH_EXPLAIN"
+			options=""
+			type="text"
+			group="general"
+			server="0">COM_IJOOMERADV_BESEATED_RADIOUS
+		</cfg>
+
+	</config>
+	<views>
+		<view>
+			<caption>Company</caption>
+			<extView>company</extView>
+			<extTask>getCompanies</extTask>
+			<remoteTask>getCompanies</remoteTask>
+			<requiredField>0</requiredField>
+		</view>
+		<view>
+			<caption>Venue</caption>
+			<extView>venue</extView>
+			<extTask>getVenue</extTask>
+			<remoteTask>getVenue</remoteTask>
+			<requiredField>0</requiredField>
+		</view>
+	</views>
+</extension>

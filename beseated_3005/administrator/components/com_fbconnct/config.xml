@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<fieldset name="basic" label="COM_FBCONNCT_FACEBOOK_SETTINGS">
+		<field name="appid" type="text" default="" label="COM_FBCONNCT_ENTERAPPID" description="COM_FBCONNCT_ENTERAPPIDDESC" />
+		<field name="appsecret" type="text" default="" label="COM_FBCONNCT_APPSECRET" description="COM_FBCONNCT_APPSECRETDESC" />
+		<field name="fbpermissions" type="textarea" default="email,publish_actions" label="COM_FBCONNCT_FACEBOOKPERMISSION" description="COM_FBCONNCT_FACEBOOKPERMISSIONDESC"  rows="6" cols="40" />
+		<field name="admin-email-to-notify" type="text" default="" size="50" label="COM_FBCONNCT_ADMIN_EMAIL_S" description="COM_FBCONNCT_ADMIN_EMAIL_SDESC" />
+		
+		<field name="logout-type" type="list" default="fbws" label="COM_FBCONNCT_LOGOUT_TYPE" description="COM_FBCONNCT_LOGOUT_TYPE_DESC" >
+			<option value="ws">COM_FBCONNCT_LOGOUT_SITE</option>
+			<option value="fbws">COM_FBCONNCT_LOGOUT_SITE_FB</option>
+		</field>
+		
+		<field name="bypass-signup" type="list" default="1" label="COM_FBCONNCT_BYPASS_REG_SETTINGS" description="COM_FBCONNCT_BYPASS_REG_SETTINGSDESC" >
+			<option value="1">COM_FBCONNCT_YES</option>
+			<option value="0">COM_FBCONNCT_NO</option>
+		</field>
+		
+		<field name="post-to-facebook" type="list" default="0" label="COM_FBCONNCT_POST_TO_FACEBOOK_WALL" description="COM_FBCONNCT_POST_TO_FACEBOOK_WALLDESC" >
+			<option value="1">COM_FBCONNCT_YES</option>
+			<option value="0">COM_FBCONNCT_NO</option>
+		</field>
+		<field name="facebook-message" type="textarea" default="{fullname} is registered at {siteurl} with username {username}" cols="30" rows="5"  label="COM_FBCONNCT_FACEBOOK_MSG" description="COM_FBCONNCT_FACEBOOK_MSGDESC" />
+
+		<field name="redirect-after-reg" type="text" default="" size="50" label="COM_FBCONNCT_REDIREAFTERREG" description="COM_FBCONNCT_REDIREAFTERREGDESC" />
+		<field name="redirect-after-login" type="text" default="" size="50" label="COM_FBCONNCT_REDIREAFTERLOGIN" description="COM_FBCONNCT_REDIREAFTERLOGINDESC" />
+</fieldset>
+<fieldset name="email" label="Email Settings">
+<field name="usermailsubject" type="text" default="Your Registration Details at {sitename}" size="50" label="COM_FBCONNCT_MAIL_SUBJECT" description="COM_FBCONNCT_MAIL_SUBJECTDESC" />
+<field name="usermailbody" type="textarea" default="Dear {fullname}{br}Thank You for Registering using Facebook Connect at {sitename} {br}You can login using facebook connect button at {siteurl}, however if you wish to login manually, you can use your username and Temp password provided below.{br}Keep this email safe and reset your password as soon as possible! {br}{br}Username : {username}{br}Password : {password}{br}{br}Regards{br}{sitename}{br}{siteurl}" cols="30" rows="5"  label="COM_FBCONNCT_MAIL" description="COM_FBCONNCT_MAILDESC" />
+<field name="adminmailsubject" type="text" default="New Account Details for {fullname}" size="50" label="COM_FBCONNCT_ADMIN_MAIL_SUBJECT" description="COM_FBCONNCT_ADMIN_MAIL_SUBJECTDESC" />
+<field name="adminmailbody" type="textarea" default="{fullname} is registered at {sitename} with username {username}, his/her facebook profile is : http://www.facebook.com/profile.php?id={profileid}" cols="30" rows="5"  label="COM_FBCONNCT_ADMIN_MAIL" description="COM_FBCONNCT_ADMIN_MAILDESC" />
+</fieldset>
+</config>

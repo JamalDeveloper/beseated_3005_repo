@@ -1,0 +1,48 @@
+@import url("./legacy/icomoon.css");
+@import url("./legacy/bootstrap.css");
+
+
+div#element-box div.m form table.adminlist tr td a {
+	font-size: 12px !important;
+}
+
+.radio.btn-group input[type=radio] {
+	display: block;
+}
+
+textarea {
+	font-size: 12px !important;
+}
+
+
+
+.btn-group > .btn,
+.btn-group > label,
+.btn-group > .dropdown-menu {
+  font-size: 12px;  
+}
+
+.btn-group > label {
+	float: left;
+	display: block;
+	clear: none;
+}
+
+.btn-group > input[type="radio"] {
+	width: 20px;
+	float: left;
+	display: block;
+	clear: left;
+}
+
+ul#submenu hr {	
+	display: none;
+}
+
+.foldertype-input {
+	clear: both;
+}
+
+.foldertype-input input {
+	float: none;
+}

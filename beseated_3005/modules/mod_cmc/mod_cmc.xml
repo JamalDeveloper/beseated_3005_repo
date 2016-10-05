@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>mod_cmc</name>
+	<author>compojoom.com</author>
+	<creationDate>2015-07-07</creationDate>
+	<copyright>Copyright (C) 2012 Daniel Dimitrov - compojoom.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>compojoom.com</authorUrl>
+	<version>2.0.0</version>
+	<description>MOD_CMC_XML_DESCRIPTION</description>
+	<files>
+		<file>helper.php</file>
+<folder>language</folder>
+<folder>media</folder>
+<file module="mod_cmc">mod_cmc.php</file>
+<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_cmc.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_cmc.sys.ini</language>
+	</languages>
+	<media destination="mod_cmc" folder="media/mod_cmc">
+		<folder>css</folder>
+<folder>images</folder>
+<folder>js</folder>
+	</media>
+	<config>
+		<fields name="params" addfieldpath="administrator/components/com_cmc/models/fields">
+			<fieldset name="basic">
+				<field name="layout" type="radio" class="radio btn-group btn-group-yesno" default="default"
+				       label="MOD_CMC_TEMPLATE"
+				       description="MOD_CMC_TEMPLATE_DESC">
+					<option value="default">JDEFAULT</option>
+					<option value="popup">MOD_CMC_POPUP</option>
+					<option value="floating">MOD_CMC_FLOATING</option>
+				</field>
+
+
+
+				<field name="intro-text" type="textarea" default="" cols="25" rows="2" label="MOD_CMC_INTRO_TEXT"
+				       description="MOD_CMC_INTRO_TEXT_DESC" filter="raw"/>
+				<field name="outro-text-1" type="textarea" default="" cols="25" rows="2" label="MOD_CMC_OUTRO_TEXT_1"
+				       description="MOD_CMC_OUTRO_TEXT_1_DESC"/>
+				<field name="outro-text-2" type="textarea" default="" cols="25" rows="2" label="MOD_CMC_OUTRO_TEXT_2"
+				       description="MOD_CMC_OUTRO_TEXT_2_DESC"/>
+				<field name="thankyou" type="textarea"
+				       default="Thank you! Please check your email and confirm the newsletter subscription." cols="25"
+				       rows="2" label="MOD_CMC_THANKYOU_MESSAGE" description="MOD_CMC_THANK_YOU_DESC"/>
+				<field name="listid" required="true" type="cmclists" default="" cols="25" rows="2" label="MOD_CMC_LIST"
+				       description="MOD_CMC_LIST_DESC"/>
+				<field name="fields" type="fields" default="" label="MOD_CMC_FIELDS" description="MOD_CMC_FIELDS_DESC"
+				       class="chzn-none chzn-done" filter="raw"/>
+				<field name="interests" type="interests" default="" label="MOD_CMC_INTERESTS"
+				       description="MOD_CMC_INTERESTS_DESC" class="chzn-none chzn-done" filter="raw"/>
+				<field name="mapfields" type="textarea" label="MOD_CMC_MAP_FIELDS_LABEL"
+				       description="MOD_CMC_MAP_FIELDS_DESC" filter="raw"/>
+				<field name="dateFormat" type="text" default="%Y-%m-%d" label="MOD_CMC_DATE_FORMAT"
+				       description="MOD_CMC_DATE_FORMAT_DESC"/>
+				<field name="phoneFormat" type="radio" default="inter" label="MOD_CMC_PHONE_FORMAT"
+				       description="MOD_CMC_PHONE_FORMAT_DESC">
+					<option value="us">MOD_CMC_US_FORMAT</option>
+					<option value="inter">MOD_CMC_INTERNATIONAL_FORMAT</option>
+				</field>
+				<field name="address2" type="radio" default="0" label="MOD_CMC_SHOW_ADDRESS2"
+				       description="MOD_CMC_SHOW_ADDRESS2_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="newsletterCheckbox" type="hidden" value="0" default="0"/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="jquery" type="radio" class="radio btn-group btn-group-yesno" default="1"
+				       label="MOD_CMC_JQUERY_LABEL"
+				       description="MOD_CMC_JQUERY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="bootstrap_form" type="radio" class="radio btn-group btn-group-yesno" default="1"
+				       label="MOD_CMC_BOOTSTRAP_LABEL"
+				       description="MOD_CMC_BOOTSTRAP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+				<field name="popup_start" type="text" default="0" label="MOD_CMC_POPUP_START_POSITION"
+				       description="MOD_CMC_POPUP_START_POSITION"/>
+
+				<field name="signup_position" type="radio" class="radio btn-group btn-group-yesno" default="left"
+				       label="MOD_CMC_FLOATING_SIGNUP_POSITION"
+				       description="MOD_CMC_FLOATING_SIGNUP_POSITION_DESC">
+					<option value="left">MOD_CMC_LEFT</option>
+					<option value="right">MOD_CMC_RIGHT</option>
+					<option value="bottom">MOD_CMC_BOTTOM</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

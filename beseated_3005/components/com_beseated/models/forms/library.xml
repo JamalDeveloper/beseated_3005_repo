@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+
+        <field
+            id="id"
+            name="id"
+            type="hidden" />
+
+        <field
+            id="score"
+            name="score"
+            type="hidden" />
+
+        <field
+            name="lib_name"
+            type="text"
+            label="JGLOBAL_TITLE"
+            hint="JFIELD_TITLE_DESC"
+            class="inputbox input-large-text"
+            size="40"
+            required="true" />
+
+        <field
+            name="description"
+            type="editor"
+            label="JGLOBAL_DESCRIPTION"
+            hint="COM_CATEGORIES_DESCRIPTION_DESC"
+            class="inputbox"
+            filter="JComponentHelper::filterText"
+            buttons="true"
+            hide="readmore,pagebreak" />
+
+    </fieldset>
+</form>
+

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+            name="settings"
+            label="COM_BESEATED_CONFIG_SETTINGS_LABEL"
+            description="COM_BESEATED_CONFIG_SETTINGS_DESC">
+
+            <field
+                name="merchantId"
+                type="text"
+                class="inputbox"
+                default=""
+                label="COM_BESEATED_CONFIG_MERCHANT_ID_LABEL"
+                description="COM_BESEATED_CONFIG_MERCHANT_ID_DESC"
+                hint="COM_BESEATED_CONFIG_MERCHANT_ID_HINT" />
+
+            <field
+                name="encryptionKey"
+                type="text"
+                class="inputbox"
+                default=""
+                label="COM_BESEATED_CONFIG_ENCRYPTION_KEY_LABEL"
+                description="COM_BESEATED_CONFIG_ENCRYPTION_KEY_DESC"
+                hint="COM_BESEATED_CONFIG_ENCRYPTION_KEY_HINT" />
+
+            <field
+                name="accessCode"
+                type="text"
+                class="inputbox"
+                default=""
+                label="COM_BESEATED_CONFIG_ACCESS_CODE_LABEL"
+                description="COM_BESEATED_CONFIG_ACCESS_CODE_DESC"
+                hint="COM_BESEATED_CONFIG_ACCESS_CODE_HINT" />
+
+             <field
+                name="contact_email"
+                type="text"
+                class="inputbox"
+                default=""
+                label="COM_BESEATED_CONFIG_CONTACT_EMAIL_LABEL"
+                hint="COM_BESEATED_CONFIG_CONTACT_EMAIL_HINT"
+                description="COM_BESEATED_CONFIG_CONTACT_EMAIL_DESC"
+                />
+
+            <field
+                name="beseated_guest"
+                type="usergrouplist"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_GUEST_USER_GROUP_LABEL"
+                description="COM_BESEATED_CONFIG_GUEST_USER_GROUP_DESC"
+                hint="COM_BESEATED_CONFIG_GUEST_USER_GROUP_HINT"
+                default="14"
+                filter="integer"/>
+            <field
+                name="chauffeur"
+                type="usergrouplist"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_CHAUFFEUR_USER_GROUP_LABEL"
+                description="COM_BESEATED_CONFIG_CHAUFFEUR_USER_GROUP_DESC"
+                hint="COM_BESEATED_CONFIG_CHAUFFEUR_USER_GROUP_HINT"
+                default="13"
+                filter="integer"/>
+
+            <field
+                name="protection"
+                type="usergrouplist"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_PROTECTION_USER_GROUP_LABEL"
+                description="COM_BESEATED_CONFIG_PROTECTION_USER_GROUP_DESC"
+                hint="COM_BESEATED_CONFIG_PROTECTION_USER_GROUP_HINT"
+                default="12"
+                filter="integer"/>
+
+            <field
+                name="venue"
+                type="usergrouplist"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_VENUE_USER_GROUP_LABEL"
+                description="COM_BESEATED_CONFIG_VENUE_USER_GROUP_DESC"
+                hint="COM_BESEATED_CONFIG_VENUE_USER_GROUP_HINT"
+                default="11"
+                filter="integer"/>
+
+             <field
+                name="yacht"
+                type="usergrouplist"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_YACHT_USER_GROUP_LABEL"
+                description="COM_BESEATED_CONFIG_YACHT_USER_GROUP_DESC"
+                hint="COM_BESEATED_CONFIG_YACHT_USER_GROUP_HINT"
+                default="10"
+                filter="integer"/>
+
+            <field
+                name="deposit"
+                type="text"
+                class="inputbox"
+                default="20"
+                label="COM_BESEATED_CONFIG_DEPOSIT_PERCENTAGE_LABEL"
+                hint="COM_BESEATED_CONFIG_DEPOSIT_PERCENTAGE_HINT"
+                description="COM_BESEATED_CONFIG_DEPOSIT_PERCENTAGE_DESC"
+                filter="float"/>
+
+            <field
+                name="loyalty"
+                type="text"
+                class="inputbox"
+                default="1"
+                label="COM_BESEATED_CONFIG_LOYALTY_PERCENTAGE_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_PERCENTAGE_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_PERCENTAGE_DESC"
+                filter="float"/>
+
+            <field
+                name="friends_referral"
+                type="text"
+                class="inputbox"
+                default="1"
+                label="COM_BESEATED_CONFIG_LOYALTY_USER_REFERRAL_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_REFERRAL_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_REFERRAL_DESC"
+                filter="float"/>
+
+            <field
+                name="search_distance"
+                type="text"
+                class="inputbox"
+                default="35"
+                label="COM_BESEATED_CONFIG_SEARCH_DISTANCE_LABEL"
+                hint="COM_BESEATED_CONFIG_SEARCH_DISTANCE_HINT"
+                description="COM_BESEATED_CONFIG_SEARCH_DISTANCE_DESC"
+                filter="float"/>
+
+            <field
+                name="table_booking_hours"
+                type="text"
+                class="inputbox"
+                default="2"
+                label="COM_BESEATED_CONFIG_TABLE_BOOKING_HOURS_LABEL"
+                hint="COM_BESEATED_CONFIG_TABLE_BOOKING_HOURS_HINT"
+                description="COM_BESEATED_CONFIG_TABLE_BOOKING_HOURS_DESC"
+                filter="integer"/>
+
+            <field
+                name="default_image"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_DEFAULT_IMAGE_LABEL"
+                hint="COM_BESEATED_DEFAULT_IMAGE_LABEL"
+                description="COM_BESEATED_DEFAULT_IMAGE_LABEL"/>
+
+            <field
+                name="auto_approve"
+                type="radio"
+                class="inputbox"
+                default="1"
+                label="COM_BESEATED_CONFIG_AUTO_APPROVE_LABEL"
+                description="COM_BESEATED_CONFIG_AUTO_APPROVE_DESC"
+                hint="COM_BESEATED_CONFIG_AUTO_APPROVE_DESC">
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </field>
+
+
+    </fieldset>
+
+    <fieldset
+            name="loyalty_settings"
+            label="COM_BESEATED_CONFIG_LOYALTY_SETTINGS_LABEL" >
+
+            <field
+                name="loyalty_level_lowest_min"
+                type="text"
+                class="inputbox"
+                default="1"
+                label="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MIN_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MIN_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MIN_DESC"
+                filter="float"/>
+
+            <field
+                name="loyalty_level_lowest_max"
+                type="text"
+                class="inputbox"
+                default="100000"
+                label="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MAX_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MAX_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_MAX_DESC"
+                filter="float"/>
+
+            <field
+                name="loyalty_tier_name_lowest"
+                type="text"
+                class="inputbox"
+                default="Silver"
+                label="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_LOWEST_LEVEL_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_LOWEST_LEVEL_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_LOWEST_LEVEL_DESC"
+            />
+
+             <field
+                name="loyalty_level_lowest_color"
+                type="color"
+                class="inputbox"
+                default="#000000"
+                label="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_COLOR_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_COLOR_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_LOWEST_LEVEL_COLOR_DESC"
+                />
+
+            <field
+                name="loyalty_level_middle_min"
+                type="text"
+                class="inputbox"
+                default="100001"
+                label="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MIN_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MIN_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MIN_DESC"
+                filter="float"/>
+
+            <field
+                name="loyalty_level_middle_max"
+                type="text"
+                class="inputbox"
+                default="1000000"
+                label="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MAX_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MAX_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_MAX_DESC"
+                filter="float"/>
+
+             <field
+                name="loyalty_tier_name_middle"
+                type="text"
+                class="inputbox"
+                default="Black"
+                label="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_MIDDLE_LEVEL_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_MIDDLE_LEVEL_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_MIDDLE_LEVEL_DESC"
+                />
+
+             <field
+                name="loyalty_level_middle_color"
+                type="color"
+                class="inputbox"
+                default="#fbb829"
+                label="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_COLOR_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_COLOR_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_MIDDLE_LEVEL_COLOR_DESC"
+                />
+
+            <field
+                name="loyalty_level_highest"
+                type="text"
+                class="inputbox"
+                default="1000000+"
+                label="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_DESC"
+                filter="float"/>
+
+            <field
+                name="loyalty_tier_name_highest"
+                type="text"
+                class="inputbox"
+                default="Golden"
+                label="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_HIGHEST_LEVEL_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_HIGHEST_LEVEL_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_TIER_NAME_HIGHEST_LEVEL_DESC"
+                />
+
+             <field
+                name="loyalty_level_highest_color"
+                type="color"
+                class="inputbox"
+                default="#ffffff"
+                label="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_COLOR_LABEL"
+                hint="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_COLOR_HINT"
+                description="COM_BESEATED_CONFIG_LOYALTY_HIGHEST_LEVEL_COLOR_DESC"
+                />
+    </fieldset>
+
+    <fieldset
+            name="android_push_settings"
+            label="COM_BESEATED_CONFIG_ANDROID_PUSH_API_LABEL" >
+
+            <field
+                name="guest_push_api"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_ANDROID_GUEST_PUSH_API_LABEL"
+                hint="COM_BESEATED_CONFIG_ANDROID_GUEST_PUSH_API_LABEL"
+                description="COM_BESEATED_CONFIG_ANDROID_GUEST_PUSH_API_LABEL"
+                />
+
+            <field
+                name="mananger_push_api"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_CONFIG_ANDROID_MANAGER_PUSH_API_LABEL"
+                hint="COM_BESEATED_CONFIG_ANDROID_MANAGER_PUSH_API_LABEL"
+                description="COM_BESEATED_CONFIG_ANDROID_MANAGER_PUSH_API_LABEL"
+                />
+    </fieldset>
+
+    <fieldset
+            name="email_config"
+            label="COM_BESEATED_EMAIL_CONFIG_LABEL" >
+
+            <field
+                name="logo_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_LOGO_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_LOGO_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_LOGO_LINK_LABLE"
+                />
+
+            <field
+                name="support_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_SUPPORT_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_SUPPORT_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_SUPPORT_LINK_LABLE"
+                />
+
+            <field
+                name="privacy_policy_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_PRIVACY_POLICY_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_PRIVACY_POLICY_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_PRIVACY_POLICY_LINK_LABLE"
+                />
+
+            <field
+                name="faq_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_FAQ_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_FAQ_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_FAQ_LINK_LABLE"
+                />
+
+            <field
+                name="site_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_SITE_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_SITE_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_SITE_LINK_LABLE"
+                />
+
+
+            <field
+                name="contact_phone_no"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_CONTACT_PHONE_NO_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_CONTACT_PHONE_NO_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_CONTACT_PHONE_NO_LABLE"
+                />
+
+            <field
+                name="app_store_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_APP_STORE_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_APP_STORE_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_APP_STORE_LINK_LABLE"
+                />
+
+            <field
+                name="google_play_link"
+                type="text"
+                class="inputbox"
+                label="COM_BESEATED_EMAIL_CONFIG_GOOGLE_PLAY_LINK_LABLE"
+                hint="COM_BESEATED_EMAIL_CONFIG_GOOGLE_PLAY_LINK_LABLE"
+                description="COM_BESEATED_EMAIL_CONFIG_GOOGLE_PLAY_LINK_LABLE"
+                />
+
+
+    </fieldset>
+
+</config>

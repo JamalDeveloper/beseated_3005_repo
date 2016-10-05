@@ -1,0 +1,41 @@
+.box-sizing(@args) {
+    -webkit-box-sizing: @args;
+    -moz-box-sizing: @args;
+    box-sizing: @args;
+}
+
+.border-radius(@args) {
+	-webkit-border-radius: @args;
+    border-radius: @args;
+
+    background-clip: padding-box;
+}
+
+// Box Shadows
+
+.box-shadow(@args) {
+    -webkit-box-shadow: @args;
+	-moz-box-shadow: @args;
+    box-shadow: @args;
+}
+.inner-shadow(@args) {
+    .box-shadow(inset @args);
+}
+
+.hyphens(@mode: auto) {
+	word-wrap: break-word;
+	-epub-hyphens: @mode;
+	-webkit-hyphens: @mode;
+	-moz-hyphens: @mode;
+	-ms-hyphens: @mode;
+	-o-hyphens: @mode;
+	hyphens: @mode;
+}
+
+.transition(@args:200ms) {
+    -webkit-transition: @args;
+    -moz-transition: @args;
+    -o-transition: @args;
+    -ms-transition: @args;
+    transition: @args;
+}

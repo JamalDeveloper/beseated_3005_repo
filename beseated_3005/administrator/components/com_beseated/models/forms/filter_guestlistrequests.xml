@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.premium_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="full_name ASC">BOOKING_REQUEST_FILTER_BY_FULL_NAME_ASC</option>
+			<option value="full_name DESC">BOOKING_REQUEST_FILTER_BY_FULL_NAME_DESC</option>
+			<option value="venue_name ASC">BOOKING_REQUEST_FILTER_BY_ELEMENT_NAME_ASC</option>
+			<option value="venue_name DESC">BOOKING_REQUEST_FILTER_BY_ELEMENT_NAME_DESC</option>
+			<option value="venue_status ASC">BOOKING_REQUEST_FILTER_BY_STATUS_ASC</option>
+			<option value="venue_status DESC">BOOKING_REQUEST_FILTER_BY_STATUS_DESC</option>
+			<option value="booking_date ASC">BOOKING_REQUEST_FILTER_BOOKING_DATE_ASC</option>
+			<option value="booking_date DESC">BOOKING_REQUEST_FILTER_BOOKING_DATE_DESC</option>
+			<option value="request_date_time ASC">BOOKING_REQUEST_FILTER_BOOKING_REQUEST_DATE_ASC</option>
+			<option value="request_date_time DESC">BOOKING_REQUEST_FILTER_BOOKING_REQUEST_DATE_DESC</option>
+			<option value="response_date_time ASC">BOOKING_REQUEST_FILTER_BOOKING_RESPONSE_DATE_ASC</option>
+			<option value="response_date_time DESC">BOOKING_REQUEST_FILTER_BOOKING_RESPONSE_DATE_DESC</option>
+			<option value="total_guest ASC">FILTER_VENUE_TOTAL_GUEST_ASC</option>
+			<option value="total_guest DESC">FILTER_VENUE_TOTAL_GUEST_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_BOOKING_REQUESTS_LIST_LIMIT"
+			description="COM_BESEATED_BOOKING_REQUESTS_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

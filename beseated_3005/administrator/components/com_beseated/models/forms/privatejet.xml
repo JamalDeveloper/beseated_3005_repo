@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+        <field
+            id="private_jet_id"
+            name="private_jet_id"
+            type="hidden" />
+
+        <field
+            id="published"
+            name="published"
+            default="1"
+            type="hidden" />
+
+        <field
+            id="city"
+            name="city"
+            type="hidden" />
+
+         <field
+            id="latitude"
+            name="latitude"
+            type="hidden" />
+
+         <field
+            id="longitude"
+            name="longitude"
+            type="hidden" />
+
+        <field
+                    name="image"
+                    type="file"
+                    required="false"
+                    label="COM_BESEATED_PRIVATE_JET_SERVICE_IMAGE_LABEL"
+                    description="COM_BESEATED_PRIVATE_JET_SERVICE_IMAGE_DESC"
+            />
+
+        <field
+            id="company_name"
+            name="company_name"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_PRIVATE_JET_COMPANY_NAME_LABEL"
+            description="COM_BESEATED_PRIVATE_JET_COMPANY_NAME_DESC"
+            hint="COM_BESEATED_PRIVATE_JET_COMPANY_NAME_HINT" />
+
+
+        <field
+            id="owner_email"
+            name="owner_email"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+            required="required"
+            label="COM_BESEATED_PRIVATE_JET_COMPANY_OWNER_EMAIL_LABEL"
+            description="COM_BESEATED_PRIVATE_JET_COMPANY_OWNER_EMAIL_LABEL"
+            hint="COM_BESEATED_PRIVATE_JET_COMPANY_OWNER_EMAIL" />
+
+
+    </fieldset>
+</form>
+

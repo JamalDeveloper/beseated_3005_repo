@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <form>
+    <fieldset name="basic">
+
+
+
+        <field
+            id="ticket_name"
+            name="ticket_name"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+
+            label="COM_BESEATED_TICKET_NAME_LABEL"
+            description="COM_BESEATED_EVENT_NAME_DESC"
+            hint="COM_BESEATED_EVENT_NAME_HINT" />
+
+        <field
+            id="eventlist"
+            name="event_id"
+            type="eventlist"
+            class="inputbox"
+            default=""
+
+            label="COM_BESEATED_SELECT_EVENT_LABEL"
+            description="COM_BESEATED_EVENT_CURRENCY_CODE_DESC"
+            hint="COM_BESEATED_EVENT_CURRENCY_CODE_HINT" >
+                <option value="">Select event</option>
+        </field>
+        <field
+            name="published"
+            type="radio"
+            default="0"
+            class="radio btn-group"
+            label="COM_BESEATED_PUBLISH_LABEL"
+            description="">
+        <option value ="1">Publish</option>
+        <option value ="0">Unpublish</option>
+
+        </field>
+        <field
+            id="total_ticket"
+            name="total_ticket"
+            type="text"
+            size="40"
+            class="inputbox"
+            default=""
+
+            label="COM_BESEATED_TOTAL_TICKET_LABEL"
+            description="COM_BESEATED_TOTAL_TICKET_LABEL_DESC"
+            hint="COM_BESEATED_TOTAL_TICKET_LABEL_HINT" />
+
+             <field
+            id="available_ticket"
+            name="available_ticket"
+            type="text"
+            class="readonly"
+            readonly="true"
+            label="COM_BESEATED_AVAILABLE_TICKET_LABEL"
+             />
+
+          <field
+             id="ticket_price"
+             name="ticket_price"
+             type="text"
+             label="COM_BESEATED_TICKET_PRICE_LABEL"
+           />
+
+            <field
+             id="time_stamp"
+             name="time_stamp"
+             type="hidden"
+           />
+
+
+    </fieldset>
+</form>
+

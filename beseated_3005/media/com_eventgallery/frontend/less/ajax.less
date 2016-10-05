@@ -1,0 +1,187 @@
+/* Event - Ajaxpaging */
+
+.ajaxpaging {
+
+	.navigation {
+	    overflow: hidden;
+	    width: 100%;
+	    padding: 0;
+	    margin: 0;
+	    border-width: 0;
+	}
+
+	#pageContainer {
+	    width: 60000px;
+	    .transition( margin 1s ease-in-out );
+	}
+	#pagerContainer {
+	    width: 100%;
+	    margin-right: 0;
+	}
+
+	.page {
+	    float: left;
+	    width: 500px;
+	    margin-bottom: 10px;
+	    min-height: 130px;
+	}
+
+	.thumbnail a {
+	    outline: none;
+	    line-height: 0;
+	    font-size: 0;
+	}
+
+	.thumbnail {
+	    float: left;
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	    padding: 2px;
+	}
+
+	.thumbnail:hover {
+	    border-color: gray;
+	}
+
+	.thumbnail img {
+	    border: 2px solid white;
+	    .transition( border-color 0.5s );
+	}
+
+	.thumbnail-active img {
+	    border: 2px solid gray;
+	    padding: 0;
+	}
+
+	.thumbnail-loading img {
+	    opacity: 0.25;
+	}
+
+	pre {
+	    border: 1px solid #fff;
+	    background-color: #333;
+	    padding: 5px;
+	}
+
+	.thumbnail div img {
+	    margin: 22px;
+	}
+
+	.image {
+	    width: auto;
+	    max-height: 800px;
+	}
+
+	#bigimageContainer {
+	    float: left;
+	    position: relative;
+	    text-align: center;
+	    width: 100%;
+	}
+
+	#bigimageContainer .link:hover {
+	    background-color: transparent;
+	}
+
+	#bigImage {
+	    width: auto;
+	    max-height: 800px;
+	}
+
+	#prev {
+	    float: left;
+	}
+
+	#next {
+	    float: right;
+	}
+
+	#count {
+	    width: 100%;
+	    margin: auto;
+	}
+
+	.img_overlay {
+	    background: #000;
+	    filter: alpha(opacity=74);
+	    opacity: 0.74;
+	    position: absolute;
+	    color: white;
+	    left: 10px;
+	    bottom: 15px;
+	    text-align: center;
+	    font-variant: small-caps;
+	    line-height: 1.1em;
+	    width: 100%;
+	}
+
+	.img_overlay_fotos {
+	    filter: alpha(opacity=64);
+	    opacity: 0.64;
+	    left: 0;
+	    bottom: 10px;
+	    padding-top: 5px;
+	    text-align: center;
+	    font-variant: small-caps;
+	    line-height: 1.1em;
+	}
+
+	.jsgallery-prev {
+	    background: url('../images/prev_button.png') no-repeat left 50%;
+	    display: block;
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 63px;
+	}
+
+	.jsgallery-zoom {
+	    background: url('../images/zoom_button.png') no-repeat 50% 50%;
+	    display : block;
+	    height: 100%;
+	    left: 70px;
+	    position: absolute;
+	    top: 0;
+	    width: 80%;
+	}
+
+	.jsgallery-next {
+	    background: url('../images/next_button.png') no-repeat right 50%;
+	    display: block;
+	    height: 100%;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 63px;
+	}
+
+	.jsgallery-add2cart {
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    right: 10px;
+	    top: 10px;
+	    z-index: 999;
+	}
+
+	.jsgallery-cartconnector {
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    right: 10px;
+	    top: 10px;
+	    z-index: 999;
+	}
+
+	.jsgallery-socialmedia {
+	    display : block;
+	    left: 10px;
+	    position : absolute;
+	    right: 0;
+	    top: 10px;
+	    width: 40px;
+	    z-index: 999;
+	}
+
+}

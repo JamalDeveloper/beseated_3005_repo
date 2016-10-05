@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="visforms" method="upgrade">
+	<name>Visforms - Visforms</name>
+	<author>Aicha Vack</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C) 2013 vi-solutions. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@vi-solutions.de</authorEmail>
+	<authorUrl>vi-solutions.de</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_VISFORMS_VISFORMS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="visforms">visforms.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+	</config>
+
+</extension>

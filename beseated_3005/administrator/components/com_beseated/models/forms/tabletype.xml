@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+        <field
+            id="table_type_id"
+            name="table_type_id"
+            type="hidden" />
+
+       <field name="table_type_name" id="table_type_name" type="text"
+
+            label="COM_BESEATED_FORM_LBL_VENUE_TABLE_TYPE_NAME"
+                 required="true"  />
+
+       <field name="table_type_desc" id="table_type_desc" type="textarea"
+
+            label="COM_BESEATED_FORM_LBL_VENUE_TABLE_TYPE_DESC"
+       />
+
+       <field name="published" id="published" type="radio"
+
+            label="COM_BESEATED_FORM_LBL_REWARD_PUBLISHED"
+            default="1"
+            class="radio btn-group"
+            description="">
+                <option value="1">Published</option>
+                <option value="0">Unpublished</option>
+        </field>
+
+	</fieldset>
+
+</form>

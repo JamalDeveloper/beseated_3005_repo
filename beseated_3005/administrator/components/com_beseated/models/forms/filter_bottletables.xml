@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<!-- <field
+			name="published"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			statuses="0,1"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field> -->
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.music_id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="bottle_type_name ASC">JGLOBAL_BOTTLE_NAME_ASC</option>
+			<option value="bottle_type_name DESC">JGLOBAL_BOTTLE_NAME_DESC</option>
+			<option value="bottle_type_id ASC">JGRID_BOTTLE_ID_ASC</option>
+			<option value="bottle_type_id DESC">JGRID_BOTTLE_ID_DESC</option>
+			<option value="created ASC">JGRID_CREATED_ASC</option>
+			<option value="created DESC">JGRID_CREATED_DeSC</option>
+			<option value="published ASC">FILTER_STATUS_ASC</option>
+			<option value="published DESC">FILTER_STATUS_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT"
+			description="COM_BESEATED_PREMIUM_TABLE_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>
